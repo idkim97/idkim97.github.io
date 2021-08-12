@@ -2,7 +2,7 @@
 title: "[알고리즘] 합병 정렬(Merge Sort) "
 date: 2021-08-10 20:00:00
 categories:
-- Algorithm
+- 백준
 tags:
 - 알고리즘
 - 정렬
