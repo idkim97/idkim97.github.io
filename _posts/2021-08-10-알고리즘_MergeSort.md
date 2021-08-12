@@ -9,10 +9,10 @@ tags:
 ---
 ## Goal
 
-> Merge Sort 알고리즘을 이해한다.
-> Merge Sort 알고리즘의 특징 
-> Merge Sort 알고리즘의 시간 복잡도
-> Merge Sort 알고리즘을 C언어로 구현한다.
+> Merge Sort 알고리즘을 이해한다.  
+> Merge Sort 알고리즘의 특징   
+> Merge Sort 알고리즘의 시간 복잡도  
+> Merge Sort 알고리즘을 C언어로 구현한다.  
 
 <br><br><br><br><br><br>
 
