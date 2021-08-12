@@ -47,16 +47,19 @@ tags:
 
 ![enter image description here](https://github.com/idkim97/idkim97.github.io/blob/master/img/MergeSort.png?raw=true)
 
-**Ⅰ**. 배열에 21, 10, 12, 20, 25, 13, 15, 22가 들어있다고 보고 이를 **Merge Sort**해보자
-**Ⅱ**. 먼저 배열을 두개로 쪼개어 나눈다 **(Divide)**
-**Ⅲ**. 배열의 원소 개수가 1개가 될때 까지 계속 나눈다 **(Divide)**
-**Ⅳ**. 나뉜 배열을 두개씩 비교해 정렬하고 합친다 **( Conquer & Combine )**
-**Ⅴ**. 합치는 과정을 반복해 최종적으로 정렬된 배열을 찾는다.
+**Ⅰ**. 배열에 21, 10, 12, 20, 25, 13, 15, 22가 들어있다고 보고 이를 **Merge Sort**해보자  
+**Ⅱ**. 먼저 배열을 두개로 쪼개어 나눈다 **(Divide)**  
+**Ⅲ**. 배열의 원소 개수가 1개가 될때 까지 계속 나눈다 **(Divide)**  
+**Ⅳ**. 나뉜 배열을 두개씩 비교해 정렬하고 합친다 **( Conquer & Combine )**  
+**Ⅴ**. 합치는 과정을 반복해 최종적으로 정렬된 배열을 찾는다.  
 
  <br> <br> <br><br> <br> <br>
 
 ## Merge Sort 알고리즘 과정
 ![enter image description here](https://github.com/idkim97/idkim97.github.io/blob/master/img/MergeSort2.png?raw=true)
+
+<br> <br> <br><br> <br> <br>
+
 
 ## Merge Sort 코드
 ```c
