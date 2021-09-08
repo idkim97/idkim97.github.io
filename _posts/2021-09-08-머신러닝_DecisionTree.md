@@ -24,13 +24,13 @@ tags:
 
 **1. 데이터를 나누는 기준**
 		
-**2. 언제 분기를 멈출 것인가?**
+**2. Determine the Best Split**
 
 크게 보면 이렇게 두가지 인데 먼저 첫번째 고려사항부터 살펴보자.
 
 <br><br><br><br><br><br>
 
-### 데이터를 나누는 기준
+### 1. 데이터를 나누는 기준
 <hr>
 데이터를 나누는 기준은 **1. 데이터 타입**과 **2. 나눌 가짓수** 에 따라 나눈다.
 
@@ -48,4 +48,30 @@ tags:
 - **2.나눌 가짓수**
 	- **2-way split**
 	- **multi-way split**
- 
+
+<br><br><br><br><br><br>
+
+### 2. Determine the Best Split 
+종류가 같은 / 비슷한 class로 분배하는것이 가장 적절하다. 여기서 class란 target과 같은 의미이다. 이는 데이터의 **impurity**가 낮다는것을 의미한다.
+
+![enter image description here](https://github.com/idkim97/idkim97.github.io/blob/master/img/split.jpg?raw=true)
+
+<br><br><br><br><br><br>
+
+## 노드의 Impurity(불순도)를 결정하는 척도
+
+### 1. Entropy
+불순도를 수치화한 지표 중 하나이며 엔트로피의 값에 따라 Decision Tree의 분류가 일어난다.
+
+**Entropy가 0일 경우,** 개체의 속성이 모두 동일하다. 즉 분류가 필요없다.
+
+**Entropy가 1에 가까울 경우,** 불순도가 높다.
+
+**Entropy가 0에 가까울 경우,** 불순도가 낮다.
+
+한마디로 **Impurity와 Entropy는 비례관계**라고 볼 수 있다.
+
+엔트로피의 계산공식은 아래와 같다.
+
+![image](https://github.com/idkim97/idkim97.github.io/blob/master/img/entropy.png?raw=true)
+{: .align-center}
