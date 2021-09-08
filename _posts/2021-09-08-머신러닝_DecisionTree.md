@@ -13,6 +13,7 @@ tags:
 **Decision Tree (결정 트리, 의사결정트리, 의사결정나무)** 는 **분류(Classification)와 회귀(Regression)**이 모두 가능한 지도 학습 모델(Supervised Learning) 중 하나이다. 이러한 특성 때문에 **CART(Classification and Regression Tree) 알고리즘**의 하나이기도 하다. 결정 트리는 예/아니오 질문을 이어가며 학습하는데 예를 들어 매, 펭귄, 돌고래, 곰을 구분한다고 보자. 매와 펭귄은 날개가 있고, 돌고래와 곰은 날개가 없다. 날개가 있나요? 라는 질문을 통해 매, 펭귄 / 돌고래, 곰 으로 집단을 나눌 수 있다. 매와 펭귄은 날 수 있나요? 라는 질문을 통해 매 / 펭귄으로 나눌 수 있고 돌고래와 곰은 지느러미가 있나요? 라는 질문을 통해 나눌 수 있다.
 
 ![DecisionTree](https://github.com/idkim97/idkim97.github.io/blob/master/img/%EA%B2%B0%EC%A0%95%ED%8A%B8%EB%A6%AC.png?raw=true)
+{: . align-center}
 
 이렇게 특정 기준에 따라 데이터를 구분하는 모델을 트리 모델이라고 한다. 한번의 분기마다 영역을 여러개로 나누고 이때 기준 하나하나를 노드(Node)라고 한다. 맨 처음 분류 기준을 Root Node라고 하며 맨 마지막 노드를 Leaf Node라고 한다.
 
@@ -75,3 +76,18 @@ tags:
 
 ![image](https://github.com/idkim97/idkim97.github.io/blob/master/img/entropy.png?raw=true)
 {: .align-center}
+
+<br><br><br><br><br><br>
+
+### 2. Gini Index ( 지니계수 )
+![enter image description here](https://github.com/idkim97/idkim97.github.io/blob/master/img/gini1.jpg?raw=true)
+불순도를 측정하는 지표로 통계적 분산정도를 정량화하여 표현한 값이다.
+
+지니계수가 클수록 데이터가 equally distributed, 즉 비효율적으로 분산된것이고
+**지니계수가 작을수록 데이터가 가장 이상적으로 분산된 것을 의미한다.**
+
+지니계수의 계산은 아래 그림과 같다.
+
+![enter image description here](https://github.com/idkim97/idkim97.github.io/blob/master/img/gini2.jpg?raw=true)
+
+
