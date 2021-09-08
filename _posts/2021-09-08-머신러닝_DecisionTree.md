@@ -2,9 +2,9 @@
 title: "[머신러닝] [Python] 1. Decision Trees (결정 트리)"
 date: 2021-09-06 02:00:00
 categories:
-- 머신러닝
+- Machine Learning
 tags:
-- 머신러닝
+- Machine Learning
 - 
 ---
 
