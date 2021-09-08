@@ -83,7 +83,9 @@ tags:
 <br><br><br><br><br><br>
 
 ### 2. Gini Index ( 지니계수 )
+
 ![enter image description here](https://github.com/idkim97/idkim97.github.io/blob/master/img/gini1.jpg?raw=true)
+
 불순도를 측정하는 지표로 통계적 분산정도를 정량화하여 표현한 값이다.
 
 지니계수가 클수록 데이터가 equally distributed, 즉 비효율적으로 분산된것이고
@@ -95,7 +97,8 @@ tags:
 
 <br><br><br><br><br><br>
 
-**※ 그렇다면 Gini Index를 이용해서 Split의 기준을 정할 때 아래 그림처럼 Gini Index를 비교하는 방법을 무엇일까?**
+**※ 그렇다면 Gini Index를 이용해서 Split의 기준을 정할 때 
+아래 그림처럼 Gini Index를 비교하는 방법을 무엇일까?**
 
 <p align="center">
 <img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/ginigain.jpg?raw=true">
@@ -112,8 +115,27 @@ Gini Gain은 각 데이터의 Gini Index를 비교하기 위한 수치이다.
 
 ![enter image description here](https://github.com/idkim97/idkim97.github.io/blob/master/img/ginigain3.jpg?raw=true)![enter image description here](https://github.com/idkim97/idkim97.github.io/blob/master/img/ginigain2.jpg?raw=true)  
 
+분기 이전 원래 데이터의 Gini 계수 :
+**Gini(Parent) = 1 - (6/12)<sup>2</sup> - (6/12)<sup>2</sup> = 0.5**
 
+N1의 Gini 계수 :
+**Gini(N1) = 1 - (5/7)<sup>2</sup> - (2/7)<sup>2</sup> = 0.41**
 
-Gini(N1) = 1 - (5/7)<sup>2</sup> - (2/7)<sup>2</sup> = 0.41
-Gini(N2) = 1 - (1/5)<sup>2</sup> - (4/5)<sup>2</sup> = 0.32
-Gini(children) = 7/12 x 0.41 + 5/12 x 0.32 = 0.372
+N2의 Gini 계수 :
+**Gini(N2) = 1 - (1/5)<sup>2</sup> - (4/5)<sup>2</sup> = 0.32**
+
+Gini Gain을 활용한 분기 이후 Gini 계수 :
+**Gini(children) = 7/12 x 0.41 + 5/12 x 0.32 = 0.372**
+
+<br><br><br><br><br><br>
+
+### 3. Classification Error (분류 오차)
+지니계수와 거의 비슷하지만 조금더 단순하고 간단하다. 어려운 내용은 아니니 예제로 바로 설명해보겠다.
+
+<p align="center">
+<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/cla.jpg?raw=true">
+</p>
+
+C1과 C2의 Error값을 각각 계산해주고 둘중 더 큰값을 1에서 빼주면 되는 간단한 수식이다.
+
+Classification Error는 간단하게 계산 가능하다는 장점이 있지만 Gini Index보다는 Impurity를 판단하는 정확도가 떨어진다는 단점이 있다.
