@@ -12,8 +12,9 @@ tags:
 
 **Decision Tree (결정 트리, 의사결정트리, 의사결정나무)** 는 **분류(Classification)와 회귀(Regression)**이 모두 가능한 지도 학습 모델(Supervised Learning) 중 하나이다. 이러한 특성 때문에 **CART(Classification and Regression Tree) 알고리즘**의 하나이기도 하다. 결정 트리는 예/아니오 질문을 이어가며 학습하는데 예를 들어 매, 펭귄, 돌고래, 곰을 구분한다고 보자. 매와 펭귄은 날개가 있고, 돌고래와 곰은 날개가 없다. 날개가 있나요? 라는 질문을 통해 매, 펭귄 / 돌고래, 곰 으로 집단을 나눌 수 있다. 매와 펭귄은 날 수 있나요? 라는 질문을 통해 매 / 펭귄으로 나눌 수 있고 돌고래와 곰은 지느러미가 있나요? 라는 질문을 통해 나눌 수 있다.
 
-![DecisionTree](https://github.com/idkim97/idkim97.github.io/blob/master/img/%EA%B2%B0%EC%A0%95%ED%8A%B8%EB%A6%AC.png?raw=true)
-{: . align-center}
+<p align="center">
+<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/%EA%B2%B0%EC%A0%95%ED%8A%B8%EB%A6%AC.png?raw=true">
+</p>
 
 이렇게 특정 기준에 따라 데이터를 구분하는 모델을 트리 모델이라고 한다. 한번의 분기마다 영역을 여러개로 나누고 이때 기준 하나하나를 노드(Node)라고 한다. 맨 처음 분류 기준을 Root Node라고 하며 맨 마지막 노드를 Leaf Node라고 한다.
 
@@ -59,7 +60,7 @@ tags:
 
 <br><br><br><br><br><br>
 
-## 노드의 Impurity(불순도)를 결정하는 척도
+## 노드의 Impurity(불순도)
 
 ### 1. Entropy
 불순도를 수치화한 지표 중 하나이며 엔트로피의 값에 따라 Decision Tree의 분류가 일어난다.
@@ -74,8 +75,10 @@ tags:
 
 엔트로피의 계산공식은 아래와 같다.
 
-![image](https://github.com/idkim97/idkim97.github.io/blob/master/img/entropy.png?raw=true)
-{: .align-center}
+<p align="center">
+<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/entropy.png?raw=true">
+</p>
+
 
 <br><br><br><br><br><br>
 
@@ -90,4 +93,27 @@ tags:
 
 ![enter image description here](https://github.com/idkim97/idkim97.github.io/blob/master/img/gini2.jpg?raw=true)
 
+<br><br><br><br><br><br>
 
+**※ 그렇다면 Gini Index를 이용해서 Split의 기준을 정할 때 아래 그림처럼 Gini Index를 비교하는 방법을 무엇일까?**
+
+<p align="center">
+<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/ginigain.jpg?raw=true">
+</p>
+
+A와 B 둘중 어떤 것이 더 잘 분기된것인지를 알기 위해선 **Gini Gain**을 활용해야 한다.
+
+<br><br><br><br><br><br>
+
+### 2-1. Gini Gain
+Gini Gain은 각 데이터의 Gini Index를 비교하기 위한 수치이다.
+
+좀 더 쉬운 이해를 위해 예제와 함께 살펴보자.
+
+![enter image description here](https://github.com/idkim97/idkim97.github.io/blob/master/img/ginigain3.jpg?raw=true)![enter image description here](https://github.com/idkim97/idkim97.github.io/blob/master/img/ginigain2.jpg?raw=true)  
+
+
+
+Gini(N1) = 1 - (5/7)<sup>2</sup> - (2/7)<sup>2</sup> = 0.41
+Gini(N2) = 1 - (1/5)<sup>2</sup> - (4/5)<sup>2</sup> = 0.32
+Gini(children) = 7/12 x 0.41 + 5/12 x 0.32 = 0.372
