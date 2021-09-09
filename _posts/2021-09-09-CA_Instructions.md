@@ -10,12 +10,12 @@ tags:
 - Instruction Set Architecture
 ---
 
-## Number Representations
+# Number Representations
 인간은 기본적으로 모든 수를 10진수에 기반해 생각한다. 그러나 컴퓨터는 모든 연산을 0과 1로 처리를 하는 2진수에 기반한다. 이때문에 컴퓨터 구조를 이해하기 위해서는 기본적으로 컴퓨터가 어떻게 2진수로 연산을 하고 처리하는지 알 필요가 있다. 먼저 컴퓨터가 어떻게 음수와 양수를 2진수로 표현하는지 알아보자.
 
 <br><br><br><br><br><br>
 
-### 2's Complement( = 2의 보수 )
+## 2's Complement( = 2의 보수 )
 <hr>
 먼저 양수는 기본적인 산수실력만 갖추고 있다면 이진법으로 어떻게 나타내는지 잘 알고 있을 것이다.
 
@@ -72,7 +72,7 @@ tags:
 
 <br><br><br><br><br><br>
 
-## The Von-Nuemann Model ( 폰 노이만 구조 )
+# The Von-Nuemann Model ( 폰 노이만 구조 )
 
 <p align="center">
 <img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/Von.png?raw=true">
@@ -91,7 +91,7 @@ tags:
 
 <br><br><br><br><br><br>
 
-## Instructions ( 명령어 ) 란?
+# Instructions ( 명령어 ) 란?
 
 컴퓨터의 언어, 그중에서도 **단어** 라고 볼 수 있다.
 
@@ -100,7 +100,7 @@ CPU는 Instruction 사이클을 반복해서 프로그램을 실행한다.
 
 <br><br><br><br><br><br>
 
-### Instruction Set Architecture (ISA)
+## Instruction Set Architecture (ISA)
 <hr>
 **Instruction Set Architecture (ISA)**는 **문장**이라고 볼 수 있다.
 
@@ -108,7 +108,7 @@ CPU는 Instruction 사이클을 반복해서 프로그램을 실행한다.
 
 <br><br><br><br><br><br>
 
-### Two types of Instruction Set
+## Two types of Instruction Set
 <hr>
 1. **Complex Instruction Set Computer**  ( CISC )
 
@@ -126,7 +126,7 @@ CPU는 Instruction 사이클을 반복해서 프로그램을 실행한다.
 
 <br><br><br><br><br><br>
 
-### RISC vs CISC
+## RISC vs CISC 정리
 <hr>
 <p align="center">
 <img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/RISC.jpg?raw=true">
