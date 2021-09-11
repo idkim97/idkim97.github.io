@@ -89,8 +89,11 @@ LEGv8에서 제공하는 레지스터의 역할은 다음과 같다.
 </p>
 
 **X0 ~ X7 : Procedure arguments / results  
+
 X9 ~ X15 : 임시적으로 값을 저장  
+
 X19 ~ X27 : 레지스터 저장  
+
 XZR ( = X31 ) : 절대상수 0을 항상 갖고있음**  
 
 <br><br><br><br><br><br>
@@ -147,10 +150,15 @@ f = ( g + h ) - ( i + j )
 </p>
 
  **1. h는 X21 레지스터에 저장되어 있고, 배열 A의 base address는 X22에 있다.**  
+
  **2. 먼저 A[8]을 가져오기 위해 Load 명령어를 실행한다.**  
+
  **3. A의 base address인 X22 레지스터부터**  
+
  **4. 배열의 8번째 값을 load하기 위해 8byte x 8번째 = 64의 byte offset을  X9라는 임시레지스터에서 Load한다.**  
+
  **5. X9에 저장된 A[8]과 X21에 저장된 h를 더해 X9에 다시 저장한다.**  
+ 
  **6. X9에 h + A[8]의 값인 A[12]를 Store 한다.**  
 
 <br><br><br><br><br><br>
