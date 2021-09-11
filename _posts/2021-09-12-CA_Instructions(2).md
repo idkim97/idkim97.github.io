@@ -1,5 +1,5 @@
 ﻿---
-title: "[컴퓨터 구조] 1. Instruction Set (2)"
+title: "[컴퓨터 구조] 2. Instruction Set (2)"
 date: 2021-09-12 03:00:00
 categories:
 - Computer Architecture
@@ -77,7 +77,7 @@ t0 라는 임의의 변수에 g + h 값을 저장하고 t1이라는 변수에 i 
 <br><br><br><br><br><br>
 
 ### Design Principle 2 : Smaller is Faster
-LEGv8에서 레지스터의 수는 32개로 제한 됐으며 이는 더 빠른 연산을 위함이다.
+LEGv8에서 레지스터의 수는 32개로 제한 됐으며 이는 더 빠른 연산을 위함이다.  
 cf ) 메인메모리는 수백만개의 저장공간을 가진다.
 
 <br><br><br><br><br><br>
@@ -88,10 +88,10 @@ LEGv8에서 제공하는 레지스터의 역할은 다음과 같다.
 <img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/re1.jpg?raw=true">
 </p>
 
-**X0 ~ X7 : Procedure arguments / results
-X9 ~ X15 : 임시적으로 값을 저장
-X19 ~ X27 : 레지스터 저장
-XZR ( = X31 ) : 절대상수 0을 항상 갖고있음**
+**X0 ~ X7 : Procedure arguments / results  
+X9 ~ X15 : 임시적으로 값을 저장  
+X19 ~ X27 : 레지스터 저장  
+XZR ( = X31 ) : 절대상수 0을 항상 갖고있음**  
 
 <br><br><br><br><br><br>
 
@@ -107,9 +107,9 @@ f = ( g + h ) - ( i + j )
 
 
 
-> **ADD X9, X20, X21** 
-> **ADD X10, X22, X23** 
-> **SUB X19, X9, X10**
+> **ADD X9, X20, X21**   
+> **ADD X10, X22, X23**   
+> **SUB X19, X9, X10**  
 
 <BR><BR><BR><BR><BR><BR>
 
@@ -123,8 +123,8 @@ f = ( g + h ) - ( i + j )
 
 이런 구조속에서 메모리와 레지스터 간에 데이터를 전달하기 위해서 우리는 **data transfer instruction**가 반드시 필요하다. 이때 사용되는 명령어는 단 두개! **load와 store**가 있다.
 
-> **load : memory -> register** 
-> **store : register -> memory**
+> **load : memory -> register**   
+> **store : register -> memory**  
 
 이때 load와 store를 하기 위해선 반드시 **Memory Operands(Address)**가 필요하다.
 
@@ -146,12 +146,12 @@ f = ( g + h ) - ( i + j )
 <img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/mo1.jpg?raw=true">
 </p>
 
- **1. h는 X21 레지스터에 저장되어 있고, 배열 A의 base address는 X22에 있다.
- 2. 먼저 A[8]을 가져오기 위해 Load 명령어를 실행한다.
- 3. A의 base address인 X22 레지스터부터
- 4. 배열의 8번째 값을 load하기 위해 8byte x 8번째 = 64의 byte offset을  X9라는 임시레지스터에서 Load한다.
- 5. X9에 저장된 A[8]과 X21에 저장된 h를 더해 X9에 다시 저장한다.
- 6. X9에 h + A[8]의 값인 A[12]를 Store 한다.**
+ **1. h는 X21 레지스터에 저장되어 있고, 배열 A의 base address는 X22에 있다.**  
+ **2. 먼저 A[8]을 가져오기 위해 Load 명령어를 실행한다.**  
+ **3. A의 base address인 X22 레지스터부터**  
+ **4. 배열의 8번째 값을 load하기 위해 8byte x 8번째 = 64의 byte offset을  X9라는 임시레지스터에서 Load한다.**  
+ **5. X9에 저장된 A[8]과 X21에 저장된 h를 더해 X9에 다시 저장한다.**  
+ **6. X9에 h + A[8]의 값인 A[12]를 Store 한다.**  
 
 <br><br><br><br><br><br>
 
@@ -169,8 +169,8 @@ x = x + 4
 <br><br><br><br><br><br>
 
 ### Design Principle 3 : Make the common case fast
--> 작은 상수는 common에 해당한다.
--> Immediate Operand는 불필요한 Load를 피한다!
+-> 작은 상수는 common에 해당한다.  
+-> Immediate Operand는 불필요한 Load를 피한다!  
 
 <br><br><br><br><br><br>
 
