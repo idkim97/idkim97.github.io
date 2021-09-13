@@ -12,7 +12,10 @@ tags:
 
 이번 포스팅에서는 Categorical 변수를 예측하는 모델인 Logistic Regression ( 로지스틱 회귀)에 대해 살펴보겠습니다. 포스팅에서 사용된 자료에 대해서는 가천대학교 소프트웨어학과 김원 교수님의 강의를 기반으로 작성되었음을 밝힙니다.
 
+<br><br><br><br><br><br>
+
 # Linear Regression ( 선형 회귀 )
+<hr>
 Logistic Regression에 대한 설명에 앞서 기본적인 이해를 위해 선형 회귀에 대해서 간단하게 알아보겠습니다. 
 
 <br><br><br><br><br><br>
@@ -37,7 +40,7 @@ Logistic Regression에 대한 설명에 앞서 기본적인 이해를 위해 선
 <br><br><br><br><br><br>
 
 # Logistic Regression ( 로지스틱 회귀)
-
+<hr>
 **Logistic Regression**은 데이터가 어떤 범주에 속할 확률을 0에서 1사이의 값으로 예측하고 그 확률에 따라 가능성이 더 높은 범주에 속하는 것으로 분류해주는 지도 학습 알고리즘이다.
 
 스펨 메일 분류기 같은 예시를 생각하면 쉬운데, 어떤 메일을 받았을 때 그 메일이 스팸일 확률이 0.5이상이면 스팸으로 분류하고, 메일이 스팸일 확률이 0.5보다 낮으면 일반 메일로 분류하는 것이다. 이렇게 데이터가 2개의 범주 중 하나에 속하도록 결정하는 것을 **Binary Classification (2진 분류)**라고 한다.
@@ -81,6 +84,7 @@ Y값은 0~1사이의 값으로 표현되며 y<0.5일때는 0으로 치환되고 
 <br><br><br><br><br><br>
 
 # Logit(로짓) - log + odds 
+<hr>
 Logistic Regression을 구현하는 것은 어렵지 않다. 파이썬에 있는 scikit-learn 라이브러리를 사용하면 코드 몇줄로 바로 구현할 수 있다. 그러나 그 작동 원리를 알고 구현하는 것과 모른채 blackbox식으로 구현하는 것은 엄연히 다르다. Logistic Regression의 작동 원리를 공부하기 위해 선행되어 알아야만 하는 몇가지 Keyword를 소개하겠다.
 
 <br><br><br>
