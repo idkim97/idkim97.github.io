@@ -127,8 +127,10 @@ Odds Ratio는 두개의 Odds의 비율을 나타내는 값이다.
  - **sag**
  - **saga**
 
+<br><br><br><br><br><br>
 
 # Logistic Regression Python Code
+<hr>
 
 이제 로지스틱 회귀를 파이썬으로 직접 구현하는 연습을 해보자.
 
@@ -196,7 +198,7 @@ from sklearn.model_selection import train_test_split
 train_features, test_features, train_labels, test_labels = train_test_split(features, survival)
 ```
 <br><br><br>
-###
+
 ## 4. 데이터 정규화(Scaling) 하기
 StandardScaler를 사용해 데이터를 정규화 하였다.
 ```python
@@ -256,6 +258,8 @@ print(model.coef_)
 [[ 1.21512352 -0.34590989  0.99346516  0.49466482]]
 ```
 sex, age, firstclass, secondclass 순으로 넣었으므로 그순서대로 확인해주면 된다. 성별은 1에 가까우므로 여자이고, 일등석 탑승 여부가 중요하다는 걸 알 수 있다. 반면에 나이는 음수가 나오는데 이는 나이가 많을수록 생존 확률이 낮아진다는 의미로 해석할 수 있다.
+
+<br><br><br>
 
 ## 5. 예측하기
 이번에는 새로운 임의의 데이터를 넣어서 예측해보자.
