@@ -117,4 +117,174 @@ Odds Ratio는 두개의 Odds의 비율을 나타내는 값이다.
 
 <br><br><br>
 
-## Logit Exercise
+# Solver Algorithms for Logistic Regression 
+<hr>
+파이썬의 Scikit-Learn에서는 다섯개의 알고리즘으로 Logic Regression을 해결한다. 각각의 알고리즘이 어떤식으로 동작하는지는 내용이 너무 방대하므로 설명하지 않겠고 그냥 이런게 있구나 하고 넘어가면 좋을 것 같다.
+
+ - **newton-cg**
+ - **lbfgs**
+ - **liblinear**
+ - **sag**
+ - **saga**
+
+
+# Logistic Regression Python Code
+
+이제 로지스틱 회귀를 파이썬으로 직접 구현하는 연습을 해보자.
+
+## 1. 데이터 불러오기
+먼저 seaborn에 내재된 타이타닉 데이터셋을 불러오도록 하자.
+```python
+import seaborn as sns  
+  
+passengers = sns.load_dataset('titanic')  
+print(passengers.shape)  
+print(passengers.head())
+```
+
+<br><br><br>
+
+총 891명의 데이터가 있고 총 15개의 컬럼이 있는걸 확인했다.
+
+<p align="center">
+<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/res.png?raw=true">
+</p>
+
+우리의 Target 데이터는 survived 이다. 살았는지 죽었는지 확인하는 컬럼이고 1은 생존, 0는 사망을 의미한다.
+
+<br><br><br>
+
+## 2. 데이터 전처리
+
+### 분석에 사용할 Feature 선택
+
+먼저 생존여부에 큰 영향을 미쳤을 것으로 예상되는 컬럼을 sex, age, pclass로 지정했다. 여성, 어린이, 1/2/3등석 순으로 살아남을 확률이 높다고 가정해본 것이다.
+
+<br><br><br>
+### 문자열을 숫자로 변환
+sex는 male과 female로 설정되있으므로 이를 숫자 데이터 1과 0으로 바꿔주자.
+여성이 살아남을 확률이 높을것으로 예상하므로 남성을 0, 여성을 1이라고 바꿔주자.
+```python
+passengers['sex'] = passengers['sex'].map({'female':1,'male':0})
+```
+
+<br><br><br>
+
+### 결측치 채워주기
+데이터를 살펴보면 age가 비어있는 경우가 있다. 이는 age의 평균치로 대체하겠다.
+```python
+passengers['age'].fillna(value=passengers['age'].mean(), inplace=True)
+```
+
+<br><br><br>
+### Feature 분리하기
+pclass의 경우 1등석에 탔는지, 2등석에 탔는지 각각의 feature로 만들어주기 위해 컬럼을 새로 생성해 분류하겠다.
+```python
+passengers['FirstClass'] = passengers['pclass'].apply(lambda x: 1 if x == 1 else 0)  
+passengers['SecondClass'] = passengers['pclass'].apply(lambda x: 1 if x == 2 else 0)
+```
+
+```python
+features = passengers[['sex', 'age', 'FirstClass', 'SecondClass']]  
+survival = passengers['survived']
+```
+<br><br><br>
+## 3. Train/Test set 분리하기
+```python
+from sklearn.model_selection import train_test_split  
+  
+train_features, test_features, train_labels, test_labels = train_test_split(features, survival)
+```
+<br><br><br>
+###
+## 4. 데이터 정규화(Scaling) 하기
+StandardScaler를 사용해 데이터를 정규화 하였다.
+```python
+from sklearn.preprocessing import StandardScaler  
+  
+scaler = StandardScaler()  
+  
+train_features = scaler.fit_transform(train_features)  
+test_features = scaler.transform(test_features)
+```
+<br><br><br>
+
+## 5. 모델 생성 및 평가하기
+```python
+from sklearn.linear_model import LogisticRegression  
+  
+model = LogisticRegression()  
+model.fit(train_features, train_labels)
+```
+model을 생성해 LogisticRegression 함수를 넣어주면 끝이다.
+
+<br><br><br>
+
+이제 학습세트로 정확도를 바로 알아보자.
+```python
+print(model.score(train_features, train_labels))
+```
+
+
+결과 : 
+```
+0.7919161676646707
+```
+
+79%의 정확도를 가진다고 나온다.
+
+<br><br><br>
+
+Test Set에서도 정확도를 확인해보자.
+```python
+print(model.score(test_features, test_labels))
+```
+결과 : 
+```
+0.766816143498
+```
+76%의 정확도를 가진다고 나온다.
+
+<br><br><br>
+
+이제 각 Feature들의 계수(Coefficients)를 확인해볼 차례이다. 어떤 Feature가 생존에 큰 영향을 주는지 확인해 볼 수 있다.
+```python
+print(model.coef_)
+```
+결과 : 
+```
+[[ 1.21512352 -0.34590989  0.99346516  0.49466482]]
+```
+sex, age, firstclass, secondclass 순으로 넣었으므로 그순서대로 확인해주면 된다. 성별은 1에 가까우므로 여자이고, 일등석 탑승 여부가 중요하다는 걸 알 수 있다. 반면에 나이는 음수가 나오는데 이는 나이가 많을수록 생존 확률이 낮아진다는 의미로 해석할 수 있다.
+
+## 5. 예측하기
+이번에는 새로운 임의의 데이터를 넣어서 예측해보자.
+```python
+Jack = np.array([0.0, 20.0, 0.0, 0.0])  
+Rose = np.array([1.0, 17.0, 1.0, 0.0])  
+ME = np.array([0.0, 32.0, 1.0, 0.0])
+
+sample_passengers = np.array([Jack, Rose, ME])
+```
+
+<br><br><br>
+이제 스케일링을 다시해주자.
+```python
+sample_passengers = scaler.transform(sample_passengers)
+```
+
+<br><br><br>
+마지막으로 예측을 해보자.
+```python
+print(model.predict(sample_passengers))  
+  
+print(model.predict_proba(sample_passengers))
+```
+```
+[0 1 0]
+
+[[0.88995985 0.11004015]
+ [0.05240318 0.94759682]
+ [0.51644668 0.48355332]]
+ ```
+Jack과 나는 죽고 Rose만 산다..
