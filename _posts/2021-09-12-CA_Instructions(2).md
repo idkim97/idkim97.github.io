@@ -88,13 +88,13 @@ LEGv8에서 제공하는 레지스터의 역할은 다음과 같다.
 <img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/re1.jpg?raw=true">
 </p>
 
-**X0 ~ X7 : Procedure arguments / results  
+**X0 ~ X7 : Procedure arguments / results**  
 
-X9 ~ X15 : 임시적으로 값을 저장  
+**X9 ~ X15 : 임시적으로 값을 저장**  
 
-X19 ~ X27 : 레지스터 저장  
+**X19 ~ X27 : 레지스터 저장**  
 
-XZR ( = X31 ) : 절대상수 0을 항상 갖고있음**  
+**XZR ( = X31 ) : 절대상수 0을 항상 갖고있음**  
 
 <br><br><br><br><br><br>
 
