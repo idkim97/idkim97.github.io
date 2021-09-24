@@ -61,8 +61,8 @@ Separating line부터 Support Vectors까지의 영역을 **Margin** 이라고 �
 
 이런 경우에는 두가지 방법을 사용해 분류 할 수 있다.
 
-**1) Soft Margin
-2) Kernel Trick**
+1) **Soft Margin**    
+2) **Kernel Trick**
 
 <br><br><br><br><br><br>
 
@@ -70,8 +70,8 @@ Separating line부터 Support Vectors까지의 영역을 **Margin** 이라고 �
 <hr>
 소프트 마진은 두가지만 기억하면 된다.
 
-**1. 마진을 크게  
-2. 약간의 error를 허용하는것**  
+1. **마진을 크게**    
+2. **약간의 error를 허용하는것**  
 
 이를 위해선 **"C"**라고 불리는 penalty parameter를 사용한다.
 
@@ -93,8 +93,8 @@ C를 사용해 마진의 너비를 조절하면 그 장단점이 분명하다.
 <img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/svm5.png?raw=true">
 </p>
 
-**C값을 줄이면 ( 소프트마진 ) 마진은 커지고 Error도 커진다.
-C값을 늘리면 ( 하드마진 ) 마진은 작아지고 Error도 작아진다.**
+**C값을 줄이면 ( 소프트마진 ) 마진은 커지고 Error도 커진다.**  
+**C값을 늘리면 ( 하드마진 ) 마진은 작아지고 Error도 작아진다.**
 
 
 <br><br><br><br><br><br>
@@ -107,7 +107,7 @@ C값을 늘리면 ( 하드마진 ) 마진은 작아지고 Error도 작아진다.
 <img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/svm6.png?raw=true">
 </p>
 
-위와같은 데이터는 어떤식으로는 선형으로 분류할 수 없는 데이터이다.
+위의 데이터는 어떤식으로는 선형으로 분류할 수 없는 데이터이다.
 이때 사용 할 수 있는 개념이 **Kernel**이다.
 
 **Kernel**이란 **데이터셋을 현재차원보다 고차원으로 변형시켜 선형으로 분류가 가능하게끔 만드는 것을 말한다**.
@@ -120,7 +120,7 @@ C값을 늘리면 ( 하드마진 ) 마진은 작아지고 Error도 작아진다.
 
 <br><br><br>
 
-scikit-learn에서 Kernel로 사용할 수 있는 함수는 대표적으로 4가지가 있다.
+Scikit-learn에서 Kernel로 사용할 수 있는 함수는 대표적으로 4가지가 있다.
 
  - **Linear kernel**   
  - **Polynomial kernel**   
@@ -175,13 +175,15 @@ gamma = 11.0인 경우 너무 높아 경계가 제대로 이루어지지 못한 
 
 # Multi-Class SVM
 <hr>
-SVM은 Binary Classifier로 이진분류만 가능하지만 SVM을 이용해 다중 Class의 분류도 가능하다. 간단하게 예시를 들어 맛만보자.
+SVM은 Binary Classifier로 이진분류만 가능하지만 SVM을 이용해 다중 Class의 분류도 가능하다. 
+간단하게 예시를 들어 맛만보자.
 
 <p align="center">
 <img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/svm9.png?raw=true">
 </p>
 
-원리는 간단하다. 세개의 클래스중 한개를 제외한 나머지를 하나의 클래스로 분류한뒤 이진분류를 진행해주면 된다.
+원리는 간단하다. 
+세개의 클래스중 한개를 제외한 나머지를 하나의 클래스로 분류한뒤 이진분류를 진행해주면 된다.
 
 <br><br><br><br><br><br>
 
