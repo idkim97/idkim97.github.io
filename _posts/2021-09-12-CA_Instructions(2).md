@@ -1,5 +1,5 @@
 ﻿---
-title: "[컴퓨터 구조] 2. Instruction Set (2)"
+title: "[컴퓨터 구조] 2. Instruction Set"
 date: 2021-09-12 03:00:00
 categories:
 - Computer Architecture
