@@ -5,7 +5,7 @@ categories:
 - Algorithm
 tags:
 - 알고리즘
-- Dynamic Programming
+- 다이나믹 프로그래밍
 ---
 
 # 동적 계획법 ( Dynamic Programming )
@@ -83,3 +83,9 @@ int bino2(int n, int r) {
 	 
 3. **return 값을 활용해라.**
 	cache를 사용할 때마다 매번 cache[n][r]처럼 쓰지말고 return값을 활용해라.
+
+4. **점화식을 만들어라.**
+	
+<br><br><br><br><br><br>
+
+
