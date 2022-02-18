@@ -30,7 +30,8 @@ masthead_title           : "김테드 개발 블로그"
 breadcrumbs              : true
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : "disqus"
+  # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
     shortname            : "idkim97-github-io"
     # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
