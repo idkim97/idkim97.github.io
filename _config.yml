@@ -96,14 +96,14 @@ analytics:
 # Site Author
 author:
   name             : "김테드"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "img/profile.jpg"
   bio              : "개발자를 꿈꾸는 학생입니다. 포스팅에 대한 적극적인 피드백 부탁드리겠습니다. 감사합니다."
   location         : "Republic of Korea"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:idkim9797@naver.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -115,7 +115,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/idkim97"
+      url: "https://github.com/idkim97"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
