@@ -16,17 +16,17 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "ê¹??…Œ?“œ ê°œë°œ ë¸”ë¡œê·?"
+title                    : "±èÅ×µå °³¹ß ºí·Î±×"
 title_separator          : ""
 subtitle                 : "Version 1.0"
-name                     : "ê¹??…Œ?“œ"
-description              : "ê°œë°œ ê³µë??ë¥? ê¸°ë¡?•˜ê¸? ?œ„?•œ ë¸”ë¡œê·?"
+name                     : "±èÅ×µå"
+description              : "°³¹ß °øºÎ¸¦ ±â·ÏÇÏ±â À§ÇÑ ºí·Î±×"
 url                      : "https://idkim97.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : "ê¹??…Œ?“œ ê°œë°œ ë¸”ë¡œê·?"
+masthead_title           : "±èÅ×µå °³¹ß ºí·Î±×"
 future                   : true
 breadcrumbs              : true
 words_per_minute         : 200
@@ -96,9 +96,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "ê¹??…Œ?“œ"
+  name             : "±èÅ×µå"
   avatar           : "img/profile.jpg"
-  bio              : "ê°œë°œ?ë¥? ê¿ˆê¾¸?Š” ?•™?ƒ?…?‹ˆ?‹¤. ?¬?Š¤?Œ…?— ????•œ ? ê·¹ì ?¸ ?”¼?“œë°? ë¶??ƒ?“œë¦¬ê² ?Šµ?‹ˆ?‹¤. ê°ì‚¬?•©?‹ˆ?‹¤."
+  bio              : "°³¹ßÀÚ¸¦ ²Ş²Ù´Â ÇĞ»ıÀÔ´Ï´Ù. Æ÷½ºÆÃ¿¡ ´ëÇÑ Àû±ØÀûÀÎ ÇÇµå¹é ºÎÅ¹µå¸®°Ú½À´Ï´Ù. °¨»çÇÕ´Ï´Ù."
   location         : "Republic of Korea"
   email            :
   links:
@@ -222,7 +222,6 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-  - jemoji
 
 # mimic GitHub Pages with --safe
 whitelist:
