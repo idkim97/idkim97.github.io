@@ -17,11 +17,19 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "ko-KR"
 <<<<<<< HEAD
+<<<<<<< HEAD
 title                    : "±èÅ×µå °³¹ß ºí·Î±×"
 title_separator          : ""
 subtitle                 : "Version 1.0"
 name                     : "±èÅ×µå"
 description              : "°³¹ß °øºÎ¸¦ ±â·ÏÇÏ±â À§ÇÑ ºí·Î±×"
+=======
+title                    : "ê¹€í…Œë“œ ê°œë°œ ë¸”ë¡œê·¸"
+title_separator          : ""
+subtitle                 : "Version 1.0"
+name                     : "ê¹€í…Œë“œ"
+description              : "ê°œë°œ ê³µë¶€ë¥¼ ê¸°ë¡í•˜ê¸° ìœ„í•œ ë¸”ë¡œê·¸"
+>>>>>>> parent of c92102d (Update _config.yml)
 =======
 title                    : "ê¹€í…Œë“œ ê°œë°œ ë¸”ë¡œê·¸"
 title_separator          : ""
@@ -35,7 +43,11 @@ repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-m
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 <<<<<<< HEAD
+<<<<<<< HEAD
 masthead_title           : "±èÅ×µå °³¹ß ºí·Î±×"
+=======
+masthead_title           : "ê¹€í…Œë“œ ê°œë°œ ë¸”ë¡œê·¸"
+>>>>>>> parent of c92102d (Update _config.yml)
 =======
 masthead_title           : "ê¹€í…Œë“œ ê°œë°œ ë¸”ë¡œê·¸"
 >>>>>>> parent of c92102d (Update _config.yml)
@@ -109,9 +121,15 @@ analytics:
 # Site Author
 author:
 <<<<<<< HEAD
+<<<<<<< HEAD
   name             : "±èÅ×µå"
   avatar           : "img/profile.jpg"
   bio              : "°³¹ßÀÚ¸¦ ²Þ²Ù´Â ÇÐ»ýÀÔ´Ï´Ù. Æ÷½ºÆÃ¿¡ ´ëÇÑ Àû±ØÀûÀÎ ÇÇµå¹é ºÎÅ¹µå¸®°Ú½À´Ï´Ù. °¨»çÇÕ´Ï´Ù."
+=======
+  name             : "ê¹€í…Œë“œ"
+  avatar           : "img/profile.jpg"
+  bio              : "ê°œë°œìžë¥¼ ê¿ˆê¾¸ëŠ” í•™ìƒìž…ë‹ˆë‹¤. í¬ìŠ¤íŒ…ì— ëŒ€í•œ ì ê·¹ì ì¸ í”¼ë“œë°± ë¶€íƒë“œë¦¬ê² ìŠµë‹ˆë‹¤. ê°ì‚¬í•©ë‹ˆë‹¤."
+>>>>>>> parent of c92102d (Update _config.yml)
 =======
   name             : "ê¹€í…Œë“œ"
   avatar           : "img/profile.jpg"
