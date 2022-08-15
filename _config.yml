@@ -96,7 +96,6 @@ analytics:
 
 # Site Author
 author:
-
   name             : "김테드"
   avatar           : "img/profile.jpg"
   bio              : "개발자를 꿈꾸는 학생입니다. 포스팅에 대한 적극적인 피드백 부탁드리겠습니다. 감사합니다."
@@ -179,7 +178,7 @@ exclude:
 keep_files:
   - .git
   - .svn
-encoding: "UTF-8"
+encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 
