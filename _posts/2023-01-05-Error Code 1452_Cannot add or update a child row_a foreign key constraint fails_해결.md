@@ -16,7 +16,9 @@ tags:
 ## ❗ 에러메세지
 
 ```sql
-Error Code: 1452. Cannot add or update a child row: a foreign key constraint fails (`user`.`#sql-19e0_13e`, CONSTRAINT `vam_book_ibfk_1` FOREIGN KEY (`authorId`) REFERENCES `vam_author` (`authorId`))
+Error Code: 1452. Cannot add or update a child row: 
+a foreign key constraint fails (`user`.`#sql-19e0_13e`, 
+CONSTRAINT `vam_book_ibfk_1` FOREIGN KEY (`authorId`) REFERENCES `vam_author` (`authorId`))
 ```
 <br><br><br>
 
@@ -54,5 +56,6 @@ alter table vam_book add foreign key (cateCode) references vam_bcate(cateCode);
 <br><br><br>
 
 ## ❗ 해결
-**기존에 vam_book에 들어있던 데이터를 지움으로써 authorId 컬럼과 cateCode 컬럼의 무결성 문제를 해결했다.**
+**기존에 vam_book에 들어있던 데이터를 지움으로써**
+**authorId 컬럼과 cateCode 컬럼의 무결성 문제를 해결했다.**
 
