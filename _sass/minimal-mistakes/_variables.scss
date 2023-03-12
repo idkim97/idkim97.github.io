@@ -150,11 +150,15 @@ $max-width: $x-large !default;
 /*
    Grid
    ========================================================================== */
+
+   
+
+
+
    //두번째 설정해서 쓰던거
    $right-sidebar-width-narrow: 180px !default;
    $right-sidebar-width: 250px !default;
-   $right-sidebar-width-wide: 300px !default;
-
+   $right-sidebar-width-wide: 500px !default; // 원래 300
 
  //  아예 초기설정
  //  $right-sidebar-width-narrow: 150px !default;
