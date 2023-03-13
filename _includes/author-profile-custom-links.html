@@ -6,6 +6,7 @@
   </li>
 -->
 
+<!--
 <br>
 <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].categories_label | default: "Categories:" }} </strong>
   {% assign categories_max = 0 %}
@@ -15,7 +16,7 @@
   {% endif %}
 {% endfor %}
 
-<!--i는 카테고리 포스트 갯수, [0]이 카테고리 제목, [1]이 그 카테고리에 해당하는 포스트들-->
+// i는 카테고리 포스트 갯수, [0]이 카테고리 제목, [1]이 그 카테고리에 해당하는 포스트들 
 <ul class="taxonomy__index">
   {% for i in (1..categories_max) reversed %}
     {% for category in site.categories %}
@@ -31,3 +32,5 @@
     {% endfor %}
   {% endfor %}
 </ul>
+
+-->
