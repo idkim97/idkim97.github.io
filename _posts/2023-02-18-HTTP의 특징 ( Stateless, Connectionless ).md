@@ -1,6 +1,6 @@
 ﻿---
-permalink: /2023-02-18-HTTP란?/
-title: "[HTTP] HTTP의 특징 ( Stateless, Conectionless ) "
+permalink: /2023-02-18-HTTP의 특징/
+title: "[HTTP] HTTP의 특징 ( Stateless, Connectionless ) "
 date: 2023-02-18 13:00:00
 toc: true
 toc_sticky: true
@@ -68,4 +68,3 @@ HTTP는 기본적으로 **연결을 유지하지 않는 모델**이다. 일반�
 비연결성 프로토콜은 **TCP/IP 연결을 새로 맺어야** 하기때문에 3 way handShake 시간이 추가되고, 웹브라우저로 사이트를 요청하면 HTML뿐만 아니라 자바스크립트, CSS, 이미지 등 수많은 자원이 함께 다운로드 되어 **시간이 오래 걸리는 단점**이 있다.
 
 그러나 최근에는  **HTTP 지속연결 (Persistent Connections)** 로 문제를 해결한다.
-
