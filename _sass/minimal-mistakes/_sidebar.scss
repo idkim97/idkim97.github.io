@@ -127,8 +127,8 @@
   }
 
   img {
-    max-width: 110px;
-    border-radius: 50%;
+    max-width: 250px; // 프로필 사진 크기 조정
+    border-radius: 20%; // 50%면 프로필 사진 원형, 낮아질수록 사각형
 
     @include breakpoint($large) {
       padding: 5px;
