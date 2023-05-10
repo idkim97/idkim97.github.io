@@ -1,5 +1,5 @@
 ﻿---
-permalink: /2023-01-06-Error Code 1452_Cannot add or update a child row_a foreign key constraint fails ​해결 /
+permalink: /2023-01-06-Error Code 1452_Cannot add or update a child row_a foreign key constraint fails_해결 /
 title: "[DB] [MYSQL] [Error Code 1452] 외래키 문제 해결"
 date: 2023-01-06 01:00:00
 toc: true
