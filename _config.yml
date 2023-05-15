@@ -290,3 +290,9 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+
+
+# codepen 계정 추가
+codepen_username: username
+
