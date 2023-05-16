@@ -44,7 +44,7 @@ $type-size-7: 0.6875em !default; // ~11px
 $type-size-8: 0.625em !default; // ~10px
 
 /* headline scale */
-$h-size-1: 1.563em !default; // ~25.008px
+$h-size-1: 2em !default; // ~25.008px //원래 1.563이였는데 2로 바꿈
 $h-size-2: 1.25em !default; // ~20px
 $h-size-3: 1.125em !default; // ~18px
 $h-size-4: 1.0625em !default; // ~17px
@@ -153,9 +153,9 @@ $max-width: $x-large !default;
 
    
    // 2023.05.16 재설정
-   $right-sidebar-width-narrow: 200px !default; // 원래 180
-   $right-sidebar-width: 300px !default; // 원래 250
-   $right-sidebar-width-wide: 400px !default; // 원래 300
+   $right-sidebar-width-narrow: 200px !default; 
+   $right-sidebar-width: 300px !default; 
+   $right-sidebar-width-wide: 400px !default;
 
 
    //두번째 설정해서 쓰던거
