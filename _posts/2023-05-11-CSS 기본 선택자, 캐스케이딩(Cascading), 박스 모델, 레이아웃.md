@@ -20,11 +20,7 @@ tags:
 ### 📌 1. 전체 선택자
 **HTML페이지 내부의 모든 태그를 선택합니다.**
 
-```css
-* { margin : 0;
-	padding : 0;
-  }
-```
+{% include codepen.html hash="vYVzEJP" title="css" %}
 
 전체선택자는 HTML 페이지 내부의 모든 요소에 같은 CSS 속성을 적용합니다. 때문에 margin이나 padding값을 초기화하는 등 기본값을 정해둘 때 사용합니다. 
 
