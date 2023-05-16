@@ -22,49 +22,28 @@ tags:
 
 {% include codepen.html hash="vYVzEJP" title="css" %}
 
+<Br>
+
 전체선택자는 HTML 페이지 내부의 모든 요소에 같은 CSS 속성을 적용합니다. 때문에 margin이나 padding값을 초기화하는 등 기본값을 정해둘 때 사용합니다. 
 
 <br><br>
 
 ### 📌 2. 태그 선택자 ( Type Selector )
 **HTML요소를 직접 지칭하는 가장 간단한 선택자**
-```css
-/* css */
-p { background : yellow;
-	color : darkgreen;
-	}
-/* HTML */
-<p> 태그 선택자 </p>
-```
+{% include codepen.html hash="qBJMEPy" title="css" %}
 
 <BR><BR>
 
 ### 📌 3. 클래스 선택자 ( Class Selector )
 **class 속성값을 가진 HTML요소를 찾아 CSS를 적용하는 선택자**
-```css
-/* CSS */
-.class1 { background: yellow; color : darkgreen; }
-div.class2 { background : darkgreen; color : yellowgreen; }
 
-<!-- HTML -->
-<p class="class1"> 클래스 선택자 </p>
-<div class="class2"> 클래스 선택자 </div>
-```
-
+{% include codepen.html hash="eYPLmeE" title="css" %}
 <Br><br>
 
 ### 📌 4. ID 선택자 ( ID Selector )
 **id 속성값을 가진 HTML요소를 찾아 CSS를 적용하는 선택자**
-```css
-/* CSS */
-#id1 { background: yellow; color : darkgreen; }
-div#id2 { background : darkgreen; color : yellowgreen; }
 
-<!-- HTML -->
-<p id="id1"> 클래스 선택자 </p>
-<div id="id2"> 클래스 선택자 </div>
-```
-
+{% include codepen.html hash="PoydwEY" title="css" %}
 <BR><BR>
 
 
@@ -162,7 +141,7 @@ ex ) `<img>, <string>, <span>` 등
 마지막으로 `content` 영역은 컨텐츠의 `width`와 `height`를 지정할 수 있습니다. 
 
 
-{% include codepen.html hash="wvYxOvX" title="css" %}
+{% include codepen.html hash="xxyabYz" title="css" %}
 
 
 <br><br><br><br>
@@ -184,7 +163,7 @@ ex ) `<img>, <string>, <span>` 등
 ### 📌 float 속성
 요소를 왼쪽이나 오른쪽에 떠있게 만듦
 
-기본형 - ` float : left || right || none `
+기본형 -  ``` float : left || right || none ```
 
 | 속성값  | 설명 |
 |--|--|
@@ -196,7 +175,7 @@ ex ) `<img>, <string>, <span>` 등
 ### 📌 position 속성
 웹 문서 안에 요소들을 배치하기 위한 속성
 
-기본형 - ` position : static || relative || absolute || fixed `
+기본형 -  ``` position : static || relative || absolute || fixed ```
 
 | 속성 값 | 설명 |
 |--|--|
