@@ -152,13 +152,16 @@ $max-width: $x-large !default;
    ========================================================================== */
 
    
-
+   // 2023.05.16 재설정
+   $right-sidebar-width-narrow: 200px !default; // 원래 180
+   $right-sidebar-width: 300px !default; // 원래 250
+   $right-sidebar-width-wide: 400px !default; // 원래 300
 
 
    //두번째 설정해서 쓰던거
-   $right-sidebar-width-narrow: 100px !default; // 원래 180
-   $right-sidebar-width: 200px !default; // 원래 250
-   $right-sidebar-width-wide: 250px !default; // 원래 300
+   // $right-sidebar-width-narrow: 100px !default; // 원래 180
+   // $right-sidebar-width: 200px !default; // 원래 250
+   // $right-sidebar-width-wide: 250px !default; // 원래 300
 
  //  아예 초기설정
  //  $right-sidebar-width-narrow: 150px !default;
