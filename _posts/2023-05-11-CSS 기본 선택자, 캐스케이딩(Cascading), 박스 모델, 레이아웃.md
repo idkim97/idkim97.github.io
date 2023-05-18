@@ -1,14 +1,14 @@
 ﻿---
 permalink: /2023-05-11-CSS 기본 선택자, 캐스케이딩(Cascading), 박스 모델, 레이아웃/
-title: "[TIL] [CSS] CSS 기본 선택자, 캐스케이딩(Cascading), 박스 모델, 레이아웃"
+title: "[CSS] [TIL] CSS 기본 선택자, 캐스케이딩(Cascading), 박스 모델, 레이아웃"
 date: 2023-05-11 15:00:00
 toc: true
 toc_sticky: true
 toc_label: "CSS 기본 선택자, 캐스케이딩(Cascading), 박스 모델, 레이아웃"
 categories:
-- TIL
+- HTML & CSS
 tags:
-- TIL
+- 카카오 클라우드 스쿨
 - CSS
 - HTML
 ---
