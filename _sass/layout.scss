@@ -9,7 +9,7 @@
 
 	h2{
 		font-size:1.2em;
-		font-family: 'Fira Mono', monospace;
+		font-family: 'Fira Mono','LocusSangsang','GowunBatang', monospace;
 		word-spacing: -3px;
 		letter-spacing: -1px;
 	}
@@ -60,7 +60,7 @@ header {
 
 
 	h1 {
-		font-family: 'Fira Mono', monospace;
+		font-family: 'Fira Mono', 'LocusSangsang', 'GowunBatang', monospace;
 		word-spacing: -12px;
 		padding: 0;
 		margin: 0 0 20px 0;
@@ -69,7 +69,7 @@ header {
 
 
 	p {
-		font-family: 'Lato', sans-serif;
+		font-family: 'Lato', 'LocusSangsang', 'GowunBatang', sans-serif;
 		// color: #3f5c7a;
 		font-size: 1em;
 		line-height: 1.5em;
@@ -119,7 +119,7 @@ nav .button {
 
 			p {
 				font-size: 0.95rem;
-				font-family: 'Lato', sans-serif;
+				font-family: 'Lato','LocusSangsang','GowunBatang', sans-serif;
 				color: #5a5a5a;
 			}
 		}
@@ -169,7 +169,7 @@ blockquote {
 
 		&::before {
 			content: "\201C";
-			font-family: Georgia, serif;
+			font-family: 'GowunBatang', 'LocusSangsang', Georgia, serif;
 
 			font-size: 90px;
 			font-weight: bold;
