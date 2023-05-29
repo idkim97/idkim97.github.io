@@ -40,7 +40,7 @@
   }
   
   #bar:after {
-      content: '$ chaerim-kim.github.io';
+      content: '$ idkim97.github.io';
       position: absolute;
       font-size: 13px;
       top:2px;
@@ -84,7 +84,7 @@
   #screen .response {
       margin: 0 0 25px 0;
       color: #1a1e24;
-      font-family: 'Fira Mono', Consolas, Menlo, Monaco, 'Courier New', Courier, monospace;
+      font-family: 'Fira Mono','NanumSquare', Consolas, Menlo, Monaco, 'Courier New', Courier, monospace; /* readme 글씨체 설정 */
       font-size: 13px;
       text-align: left;
       position: static;
@@ -107,9 +107,9 @@
       content: "\"";
   }
   
-  #screen a {
-      background-color: #5DB96F;
-      color: #FBDB5A;
+  #screen a {  
+      background-color: #77a17f;
+      color: #020100;
       text-decoration: none;
   }
   
