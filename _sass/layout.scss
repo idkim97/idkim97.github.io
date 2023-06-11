@@ -223,7 +223,7 @@ blockquote {
 }
 
 .posts {
-	display: table;
+	display: flex;
 
 	.grid__item .archive__item-title{
 		text-align: left;
