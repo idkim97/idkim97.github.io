@@ -1,7 +1,7 @@
 ﻿---
 permalink: /2023-06-16-7)예외처리 (try,catch, finally, throws)/
 published: true
-title: "[JAVA] [객체지향] 7. 예외처리 ( try, catch, finally, throws ) "
+title: "[JAVA] [객체지향] 예외처리 ( try, catch, finally, throws ) "
 date: 2023-06-16 03:00:00
 toc: true
 toc_sticky: true
