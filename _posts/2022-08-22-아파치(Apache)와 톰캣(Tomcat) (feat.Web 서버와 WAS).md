@@ -1,11 +1,11 @@
 ﻿---
 permalink: /2022-08-22-아파치(Apache)와 톰캣(Tomcat)/
 published: true
-title: "[Web & Server] 아파치(Apache)와 톰캣(Tomcat) (feat. Web 서버와 WAS)"
+title: "[Web & Server] 웹서버와 WAS (feat. 아파치 톰캣)"
 date: 2022-08-22 18:00:00
 toc: true
 toc_sticky: true
-toc_label: "아파치(Apache)와 톰캣(Tomcat)"
+toc_label: "웹서버와 WAS (feat. 아파치 톰캣)"
 categories:
 - Web & Server
 tags:
@@ -23,7 +23,7 @@ tags:
 
 <br><br><br>
 
-## ⭐ 아파치 톰캣 (Apache Tomcat)
+## ✅ 아파치 톰캣 (Apache Tomcat)
 <p align="left">
 <img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/apache1.png?raw=true">
 </p>
@@ -33,7 +33,7 @@ tags:
 
 <br><br><br>
 
-## ⭐ Web 서버
+## ✅ Web 서버
 Web서버는 보통 **HTTP 서버**를 의미한다. HTTP 서버는 **URL(웹주소)** 및 **HTTP(프로토콜 주소)** 를 이해하는 소프트웨어 이다. HTTP 서버는 저장하는 웹 사이트의 **도메인 이름**을 통해 액세스 할 수 있으며 호스팅 된 웹 사이트의 콘텐츠를 사용자의 장치로 전달한다. 
 
 <p align="left">
@@ -42,12 +42,12 @@ Web서버는 보통 **HTTP 서버**를 의미한다. HTTP 서버는 **URL(웹주
 
 브라우저에 Web 서버에서 호스팅되는 파일이 필요할 때마다 브라우저는 **HTTP**를 통해 파일을 요청한다. 요청이 올바른 Web 서버에 도달하면 HTTP서버가 요청을 수락하고 요청된 문서를 찾은 다음 HTTP를 통해 브라우저로 다시 보낸다. ( 이때, 요청된 문서를 찾지 못하면 우리가 많이 접해본 **'404 Not Found'** 를 반환한다! )
 
-<br><br><br>
+<br><br>
 
 이러한 Web 서버는 **정적인 자료**를 처리하는 서버이다. **HTML, CSS, IMAGE** 등의 정적인 파일들을 **서버에 저장하고, 요청이 들어올때 마다 서버에 저장된 파일을 사용자에게 HTML파일로 뿌려주기 때문에** **서버 자원의 한계가 생기고 리소스를 많이 차지하게 되는 단점**이 있다! 이를 보완하기 위해 생긴 것이 바로 **동적으로 파일을 처리하는 WAS 서버** 이다..!
 
 <br><br>
-### 🔍 Web 서버 예시
+### 📌 Web 서버 예시
 - Apache 재단의 Apache
 - Microsoft사의 IIS, NGINX
 - Google Web Server
@@ -55,7 +55,7 @@ Web서버는 보통 **HTTP 서버**를 의미한다. HTTP 서버는 **URL(웹주
 
 <br><br><br>
 
-## ⭐ 아파치 (Apache)
+## ✅ 아파치 (Apache)
 
 <p align="center">
 <img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/apache2.png?raw=true">
@@ -66,18 +66,27 @@ Web서버는 보통 **HTTP 서버**를 의미한다. HTTP 서버는 **URL(웹주
 
 
 
-## ⭐ WAS (Web Application Server) 서버
-WAS 서버는 **동적인 자료**를 처리하는 서버이다. 기존 WEB서버의 단점을 보완하여 **Servlet Container** 추가되었다. 클라이언트에서 웹 페이지를 요청하면 Servlet Container가 요청정보를 파악하여 실시간으로 페이지에 필요한 파일을 생성한다. 요청이 올 때마다 페이지에 필요한 정보를 그때그때 생성하므로 서버의 리소스의 부하를 줄일 수 있다는 장점이 있다.
+## ✅ WAS (Web Application Server) 서버
+WAS 서버는 **동적인 자료**를 처리하는 서버이다. 기존 WEB서버는 정적 데이터만 처리가 가능하기때문에, 요청이 들어올때마다 HTML페이지, 이미지 등을 계속 응답해줘야 하고 이는 리소스의 낭비를 일으킨다. 때문에 이러한 단점을 커버하기 위해 WAS라는 서버를 만들었다. 
+
+<BR>
+<p align="center">
+<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/servlet3.png?raw=true">
+</p>
+
+WAS는 **웹서버 + 서블릿 컨테이너 ( 웹 컨테이너 )** 로 구성되어 있다.  클라이언트에서 HTTP Request를 보내면 먼저 웹서버를 통해 정적데이터 처리만 필요한 요청인지 확인한다. 이후 정적 데이터 처리만 필요하다면 그대로 웹서버에서 요청에 대한 응답을 다시 클라이언트로 보내준다.
+
+그러나 동적데이터 처리가 필요한 요청이라면 이를 서블릿 컨테이너(웹컨테이너) 에 넘겨준다. 서블릿 컨테이너는 요청정보를 파악하여 실시간으로 페이지에 필요한 파일을 생성한다. 요청이 올 때마다 페이지에 필요한 정보를 그때그때 생성하므로 서버의 리소스의 부하를 줄일 수 있다는 장점이 있다.
 
 <br><br>
-### 🔍 WAS 예시
+### 📌 WAS 예시
 - Tomcat
 - JBoss
 - Jeus
 
 <br><br>
 
-## ⭐ 톰캣(Tomcat)
+## ✅ 톰캣(Tomcat)
 
 <p align="center">
 <img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/tomcat1.png?raw=true">
@@ -88,25 +97,11 @@ WAS 서버는 **동적인 자료**를 처리하는 서버이다. 기존 WEB서�
 
 
 
-## ⭐ 아파치 톰캣 구조
+## ✅ 웹서버와 WAS의 구조
 <p align="left">
 <img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/apa1.png?raw=true">
 </p>
 <br>
-
-<p align="left">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/apa2.png?raw=true">
-</p>
-<br>
-
-<p align="left">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/apa3.png?raw=true">
-</p>
-
-Apache Tomcat 구조의 쉬운 이해를 위해 그림 3개를 가져왔다. 이번 포스팅은 아파치 톰캣의 구조를 이해하는 것이 목적이기 때문에 서버 내부에서 일어나는 데이터 처리 방식은 잠시 제쳐두고 살펴보자.
-
-<br>
-
 
 - 사용자 (Client)가 HTTP Request를 던졌을 때 필요한 데이터가 **정적데이터** 라면 **Web 서버(Apache)** 에서는 바로 **HTTP Response**를 통해 **정적 HTML을 반환**하고 **동적 데이터**라면 이를 **Web Container(Servlet Container)** 로 보내 동적 데이터 처리를 한 뒤 Web 서버를 통해 사용자에게 반환한다.
 
@@ -118,5 +113,6 @@ Apache Tomcat 구조의 쉬운 이해를 위해 그림 3개를 가져왔다. 이
 
 - 따라서 **아파치와 톰캣을 같이 사용하여 아파치는 정적 데이터 처리, 톰캣은 JSP, ASP, PHP 등 동적 데이터 처리를 분담한다.**
 
+- 그리고 이러한 서블릿 컨테이너는 **MVC 패턴에서 Controller**에 주로 사용된다.
 
-
+<br><br>
