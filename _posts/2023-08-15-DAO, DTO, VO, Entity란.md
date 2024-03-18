@@ -114,6 +114,7 @@ public class personDTO {
 <br>
 
 - 일반적인 Entity 예제
+
 ```java
 public class Person {
     private final Long id;
