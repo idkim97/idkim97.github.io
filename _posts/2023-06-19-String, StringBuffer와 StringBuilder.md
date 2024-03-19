@@ -1,13 +1,13 @@
 ﻿---
 permalink: /2023-06-19-String, StringBuffer와 StringBuilder/
 published: true
-title: "[JAVA] [객체지향] String, StringBuffer와 StringBuilder "
+title: "[JAVA] String, StringBuffer와 StringBuilder "
 date: 2023-06-19 02:00:00
 toc: true
 toc_sticky: true
 toc_label: "객체지향 한방에 정리하기"
 categories:
-- 객체지향
+- JAVA
 tags:
 - JAVA
 - 객체지향
