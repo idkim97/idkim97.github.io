@@ -1,7 +1,7 @@
 ﻿---
 permalink: /2023-09-12-NamedParameterJdbcTemplate 이란/
 published: true
-title: "[Spring] NamedParameterJdbcTemplate 이란?"
+title: "[스프링] NamedParameterJdbcTemplate 이란?"
 date: 2023-09-12 09:00:00
 toc: true
 toc_sticky: true
