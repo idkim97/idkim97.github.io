@@ -1,13 +1,13 @@
 ﻿---
 permalink: /2023-06-16-7)예외처리 (try,catch, finally, throws)/
 published: true
-title: "[JAVA] [객체지향] 예외처리 ( try, catch, finally, throws ) "
+title: "[JAVA] 예외처리 ( try, catch, finally, throws ) "
 date: 2023-06-16 03:00:00
 toc: true
 toc_sticky: true
 toc_label: "객체지향 한방에 정리하기"
 categories:
-- 객체지향
+- JAVA
 tags:
 - JAVA
 - 객체지향
