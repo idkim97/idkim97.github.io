@@ -6,7 +6,7 @@ toc: true
 toc_sticky: true
 toc_label: "CSS 기본 선택자, 캐스케이딩(Cascading), 박스 모델, 레이아웃"
 categories:
-- HTML & CSS
+- Front-end
 tags:
 - 카카오 클라우드 스쿨
 - CSS
