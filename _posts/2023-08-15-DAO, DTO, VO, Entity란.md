@@ -1,7 +1,7 @@
 ﻿---
 permalink: /2023-08-15-DAO, DTO, VO, Entity란/
 published: true
-title: "[Spring] DAO, DTO, VO, Entity란?"
+title: "[스프링] DAO, DTO, VO, Entity란?"
 date: 2023-08-15 09:00:00
 toc: true
 toc_sticky: true
@@ -25,12 +25,12 @@ tags:
 ```java
 public class TestDao {
 public void add(TestDto dto) throws ClassNotFoundException, SQLException {
-        private static final String DRIVER = "com.mysql.jdbc.Driver";
+		private static final String DRIVER = "com.mysql.jdbc.Driver";
     private static final String URL = "jdbc:mysql://localhost:3306/dao_Db";
     private static final String USER = "root";
     private static final String PASSWORD = "1234";   
-        
-        String sql = "SELECT * FROM vouchers";
+		
+		String sql = "SELECT * FROM vouchers";
 
         try {
             con = DriverManager.getConnection(URL, USER, PASSWORD);
@@ -52,7 +52,7 @@ public void add(TestDto dto) throws ClassNotFoundException, SQLException {
 
     connection.close();
 
-    }
+	}
 }
 ```
 
@@ -67,24 +67,24 @@ public void add(TestDto dto) throws ClassNotFoundException, SQLException {
 
 ```java
 public class personDTO {
-    private String name;
-    private int age;
+	private String name;
+	private int age;
 
-    public String getName() {
-        return name;
-    }
+	public String getName() {
+		return name;
+	}
 
-    public int getAge() {
-        return age;
-    }
+	public int getAge() {
+		return age;
+	}
 
-    public void setName(String name) {
-        this.name = name;
-    }
+	public void setName(String name) {
+		this.name = name;
+	}
 
-    public void setAge(int age) {
-        this.age = age;
-    }
+	public void setAge(int age) {
+		this.age = age;
+	}
 }
 ```
 
@@ -117,15 +117,15 @@ public class personDTO {
 
 ```java
 public class Person {
-    private final Long id;
-    private final String name;
-    private final int value;
+	private final Long id;
+	private final String name;
+	private final int value;
 
-    public Person(Long id, String name, int value) {
-        this.id = id;
-        this.name = name;
-        this.value = value;
-    }
+	public Person(Long id, String name, int value) {
+		this.id = id;
+		this.name = name;
+		this.value = value;
+	}
 }
 ```
 
@@ -141,7 +141,7 @@ public class Person {
 @Setter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class Aim {
-     @Id
+	 @Id
     @Column(name="instance_id", updatable = false, nullable = false)
     private String instanceId;
 
