@@ -14,8 +14,8 @@ $indent-var: 1.3em !default;
 
 /* system typefaces */
 $serif: Georgia, Times, serif !default;
-$sans-serif: -apple-system, BlinkMacSystemFont, "NanumSquare","Noto Sans KR", "Nanum Gothic", "Roboto", "Segoe UI",
-  "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
+$sans-serif: -apple-system, BlinkMacSystemFont, "NanumSquare", "Noto Sans KR", "Nanum Gothic", "Roboto", "Segoe UI",
+   "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
 $monospace: Monaco, Consolas, "Lucida Console", monospace !default;
 
 /* sans serif typefaces */
@@ -151,11 +151,16 @@ $max-width: $x-large !default;
    Grid
    ========================================================================== */
 
-   
+   // 2024.03.28 재설정 (본문 너비 늘림)
+   $right-sidebar-width-narrow: 100px !default;
+   $right-sidebar-width: 250px !default;
+   $right-sidebar-width-wide: 350px !default;
+
+
    // 2023.05.16 재설정
-   $right-sidebar-width-narrow: 200px !default; 
-   $right-sidebar-width: 300px !default; 
-   $right-sidebar-width-wide: 400px !default;
+   // $right-sidebar-width-narrow: 200px !default;
+   // $right-sidebar-width: 300px !default;
+   // $right-sidebar-width-wide: 400px !default;
 
 
    //두번째 설정해서 쓰던거
@@ -163,14 +168,14 @@ $max-width: $x-large !default;
    // $right-sidebar-width: 200px !default; // 원래 250
    // $right-sidebar-width-wide: 250px !default; // 원래 300
 
- //  아예 초기설정
- //  $right-sidebar-width-narrow: 150px !default;
- //  $right-sidebar-width: 200px !default;
- //  $right-sidebar-width-wide: 250px !default;
+   //  아예 초기설정
+   //  $right-sidebar-width-narrow: 150px !default;
+   //  $right-sidebar-width: 200px !default;
+   //  $right-sidebar-width-wide: 250px !default;
 
-//$right-sidebar-width-narrow: 200px !default;
-//$right-sidebar-width: 300px !default;
-//$right-sidebar-width-wide: 400px !default;
+   //$right-sidebar-width-narrow: 200px !default;
+   //$right-sidebar-width: 300px !default;
+   //$right-sidebar-width-wide: 400px !default;
 
 /*
    Other
