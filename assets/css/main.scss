@@ -71,8 +71,9 @@
   }
   
   // page.css
+  // 본문 폰트 0.9em -> 1em으로 변경 (2024-04-17)
   .page__content p, .page__content li, .page__content dl {
-    font-size: 0.9em;
+    font-size: 1em;
   }
   
   .center-image
