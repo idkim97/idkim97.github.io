@@ -137,23 +137,72 @@ node.name: "node-3"
 node-1과 node-2는 es-cluster-1이라는 클러스터에 묶여있기 때문에 데이터 교환이 일어난다. node-1로 입력된 데이터는 node-2에서도 읽을 수 있고 반대도 가능하다. 그러나 node-3은 클러스터가 다르기 때문에 node-1,2에 입력된 데이터를 node-3에서는 읽을 수 없다. 
 
 <br><br><br>
+<br><br><br>
+<br>
 
 
 
+## ✅ 인덱스와 샤드 - Index & Shards
+Elasticsearch 에서 단일 데이터 단위는 **도큐먼트(document)** 라고 한다. 그리고 이 도큐먼트를 모아놓은 집합을 **인덱스(Index)** 라고 한다. 인덱스는 **샤드(Shard)** 라는 단위로 분리되고 각 노드에 분산되어 저장된다. 다음 그림은 하나의 인덱스가 5개의 샤드로 저장되도록 설정한 예시이다.
+
+ <p align="center">
+<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/elastic5.png?raw=true">
+</p>
+
+<p class="notice--info">
+⚠️ 샤드란 데이터를 분리하기 용이한 기준을 잡고 데이터를 분산저장 하는것
+</p>
+
+<br><br>
+
+### 📌 프라이머리 샤드(Primary Shard)와 복제본(Replica)
+<hr>
+
+Elasticsearch는 샤드를 사용해 데이터를 저장하는 방식을 채택했기 때문에 샤드의 문제점이 그대로 발생한다. 샤드는 데이터를 분산 저장하기 때문에 **분산저장된 데이터중 일부가 유실되거나 사라질수 있어 복제본(Replica)을 생성해서 보관한다.** 때문에 Elasticsearch에서도 샤드에 대한 Replica를 항상 생성하여 데이터가 완전히 유실될 위험을 줄이고 있다.
+
+Elasticsearch는 별도의 설정을 하지 않으면 **7.0버전부터는 Default로 1개의 샤드로 인덱스를 구성**하고, **6.x이하 버전에서는 Default로 5개의 샤드로 인덱스를 구성**한다. 클러스터에 노드를 추가하면 샤드들이 각 노드들로 분산되고 **Default로 1개의 Replica를 생성**한다. 이때 처음 생성된 샤드들을 **프라이머리 샤드(Primary Shard)** 라고 한다.
+
+ <p align="center">
+<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/elastic6.avif?raw=true">
+</p>
+
+<p class="notice--danger">
+⚠️ 노드가 1개만 있는 경우 프라이머리 샤드만 존재하고 레플리카는 생성되지 않기 때문에 Elasticsearch에서는 데이터 가용성과 무결성을 위해 최소 3개의 노드로 구성할 것을 권장한다!
+</p>
+
+같은 쌍의 샤드와 레플리카는 동일한 데이터를 담고있고, **당연하겠지만 반드시 서로 다른 노드에 저장된다.** 데이터 무결성을 위해 레플리카를 생성한 것이기 때문에 당연히 서로 다른 노드에 저장함으로써 데이터를 항상 유지할 수 있어야 한다.
+
+만약 예를들어 위 그림에서 시스템 다운이나 네트워크 단절로 인해 Node-3이 유실되면 이 클러스터는 Node-3의 0,4번 샤드를 잃어버린다. 그러나 여전히 Node-1의 0번 샤드, Node-2의 4번 샤드가 존재하기 때문에 데이터 유실 없이 클러스터의 사용이 가능하다. 
+
+ <p align="center">
+<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/elastic7.webp?raw=true">
+</p>
+
+**노드가 죽어 샤드를 잃으면 클러스터는 처음에 유실된 노드가 복구되기를 기다린다. 그러나 타임아웃이 지나 노드가 복구되지 않을거라 판단되면 유실된 샤드를 복제한다. 프라이머리 샤드가 유실되었다면 레플리카를 복제후 기존 레플리카로 취급당하던 샤드가 프라이머리 샤드가 되고, 레플리카가 유실된 경우 프라이머리 샤드를 복제해 레플리카를 다시 만들어낸다.** 
+
+이렇게 Elasticsearch는 프라이머리 샤드와 레플리카를 통해 노드가 유실되어도 데이터의 가용성과 무결성을 보장한다.
+
+
+<br><br><br>
+<br><br><br>
+<br>
+
+
+
+## ✅ 마스터 노드와 데이터 노드 
+
+
+
+
+
+
+<br><br><br><br><br><br><br>
 > ✅ 참고 : https://esbook.kimjmin.net
 
 
 
-<p class="notice--warning">
-sdasdsadsad
-asdasasdasd
-</p>
 
 
- ::: tip
- sadas
- ::: 
- 
-::: warning
-으악악
-:::
+
+
+
