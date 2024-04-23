@@ -92,7 +92,7 @@ ELK스택은 Elasticsearch + Logstash + Kibana를 함께 사용하는 기술로 
 <img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/elk3.jpg?raw=true">
 </p>
 
-Splunk는 유료로 제공되는 검색엔진이기 때문에 제외하고 Solr와 Elasticsearch에 대한 비교를 해보도록 하겠다. 
+Splunk는 유료로 제공되는 검색엔진이므로 제외하고 Solr와 Elasticsearch에 대한 비교를 해보도록 하겠다. 
 
 <br><br><br>
 
@@ -121,17 +121,17 @@ Splunk는 유료로 제공되는 검색엔진이기 때문에 제외하고 Solr�
 2. 생태계 : Elasticsearch보다 커뮤니티가 작고 플러그인 및 도구가 적다.
 
 
-<br>
+<br><br><br>
 
 장단점을 보면 Elastiscsearch가 성능이 항상 더 좋아보이지는 않는다. 본인이 안정적인 환경속에서 빠른 검색 속도를 원한다면 오히려 Solr를 사용하는게 더 좋아보인다. 그럼에도 불구하고 Elasticsearch가 더 많은 사람들이 사용하는 검색엔진인 가장 큰 이유는 **생태계의 차이**라고 생각한다.
 
 Elasticsearch는 이미 사용하기 너무 편리하게 생태계가 잘 갖춰져 있다. 
 
-로그를 수집하고 가공하는 **[logstash](https://idkim97.github.io/2024-04-17-LogStash%28%EB%A1%9C%EA%B7%B8%EC%8A%A4%ED%83%9C%EC%8B%9C%29%EB%9E%80/)**
-logstash가 무겁다면 로그 수집만을 목적으로 설계된 **Beats**
-데이터 처리 이벤트에 대한 버퍼를 처리하는 **Kafka**
-검색엔진의 결과를 다양한 UI로 제공하는 **[Kibana](https://idkim97.github.io/2024-04-19-Kibana%28%ED%82%A4%EB%B0%94%EB%82%98%29%EB%9E%80/)**
-그리고 이 모두와 연동해서 사용할 수 있는 **[Elasticsearch](https://idkim97.github.io/2024-04-18-ElasticSearch%28%EC%97%98%EB%9D%BC%EC%8A%A4%ED%8B%B1%EC%84%9C%EC%B9%98%29%EB%9E%80/)**
+로그를 수집하고 가공하는 **[logstash](https://idkim97.github.io/2024-04-17-LogStash%28%EB%A1%9C%EA%B7%B8%EC%8A%A4%ED%83%9C%EC%8B%9C%29%EB%9E%80/)**  
+logstash가 무겁다면 로그 수집만을 목적으로 설계된 **Beats**  
+데이터 처리 이벤트에 대한 버퍼를 처리하는 **Kafka**  
+검색엔진의 결과를 다양한 UI로 제공하는 **[Kibana](https://idkim97.github.io/2024-04-19-Kibana%28%ED%82%A4%EB%B0%94%EB%82%98%29%EB%9E%80/)**  
+그리고 이 모두와 연동해서 사용할 수 있는 **[Elasticsearch](https://idkim97.github.io/2024-04-18-ElasticSearch%28%EC%97%98%EB%9D%BC%EC%8A%A4%ED%8B%B1%EC%84%9C%EC%B9%98%29%EB%9E%80/)**  
 
 이렇게 안정적인 생태계가 구축된 것이 Elasticsearch를 많은 사람들이 이용하는 가장 큰 이유가 아닐까 싶다.
 
