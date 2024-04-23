@@ -2,7 +2,7 @@
 permalink: /2024-04-22-ELK(Elasticsearch+LogStash+Kibana) 스택이란/
 published: true
 title: "[ELK] ELK(Elasticsearch+LogStash+Kibana) 스택이란? "
-date: 2024-04-17 12:00:00
+date: 2024-04-23 12:00:00
 toc: true
 toc_sticky: true
 toc_label: "ELK(Elasticsearch+LogStash+Kibana) 스택이란"
