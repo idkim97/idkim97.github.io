@@ -248,6 +248,10 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+# 2024-05-22 최근게시글 추가
+recentPosts_archive:
+  type: liquid
+  path: /recentPosts/
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
