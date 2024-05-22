@@ -156,14 +156,15 @@
   // }
 }
 
-.page__content + .pagination,
-.page__meta + .pagination,
-.page__share + .pagination,
-.page__comments + .pagination {
-  margin-top: 2em;
-  padding-top: 2em;
-  border-top: 1px solid $border-color;
-}
+// 20240522 위치변경을 위한 주석처리
+// .page__content + .pagination,
+// .page__meta + .pagination,
+// .page__share + .pagination,
+// .page__comments + .pagination {
+//   margin-top: 2em;
+//   padding-top: 2em;
+//   border-top: 1px solid $border-color;
+// }
 
 // 2024-05-22 pagination 추가 css
 .pagination_prev_next {
@@ -192,7 +193,51 @@
       font-family: $cute;
       color:#ffd861;
     }
+
+
+    // 20240522 추가코드
+    &:hover {
+      @include yiq-contrasted($muted-text-color);
+    }
+
+    &:first-child {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    &:last-child {
+      //margin-left: -1px;
+      margin-bottom: 1em;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+    &.disabled-first-child {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      color: rgba($muted-text-color, 0.5);
+      pointer-events: none;
+      cursor: not-allowed;
+    }
+
+    &.disabled-last-child {
+      margin-bottom: 1em;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      color: rgba($muted-text-color, 0.5);
+      pointer-events: none;
+      cursor: not-allowed;
+    }
   }
+}
+
+.page__content + .pagination,
+.page__meta + .pagination,
+.page__share + .pagination,
+.page__comments + .pagination {
+  margin-top: 2em;
+  padding-top: 2em;
+  border-top: 1px solid $border-color;
 }
 
 /*
