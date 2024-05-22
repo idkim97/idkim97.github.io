@@ -115,6 +115,25 @@
         border-bottom-right-radius: $border-radius;
       }
     }
+
+    // 20240522 새로추가한 코드 ( 첫번째 글입니다 )
+    &.disabled-first-child {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      color: rgba($muted-text-color, 0.5);
+      pointer-events: none;
+      cursor: not-allowed;
+    }
+
+      // 20240522 새로추가한 코드 ( 가장 최근글입니다 )
+    &.disabled-last-child {
+      margin-bottom: 1em;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      color: rgba($muted-text-color, 0.5);
+      pointer-events: none;
+      cursor: not-allowed;
+    }
   }
 
   /* next/previous buttons */
