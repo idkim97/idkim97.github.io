@@ -122,7 +122,9 @@
     display: block;
     padding: 1em 2em;
     float: left;
-    width: 50%;
+    // 게시글 이전,다음 버튼 좌우에서 상하구조로 변경하기위해 주석처리후 100%로 변경
+    // width: 50%;
+    width: 100%;
     font-family: $sans-serif;
     font-size: $type-size-5;
     font-weight: bold;
@@ -131,6 +133,8 @@
     color: $muted-text-color;
     border: 1px solid mix(#000, $border-color, 25%);
     border-radius: $border-radius;
+    // 게시글 이전,다음 버튼 간격 추가
+    margin-bottom: 1em;
 
     &:hover {
       @include yiq-contrasted($muted-text-color);
