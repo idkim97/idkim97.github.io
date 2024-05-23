@@ -47,6 +47,17 @@ layout: default
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 
+      <!-- 구글 애드센스 광고 -->
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5634079691781840" crossorigin="anonymous"></script>
+      <!-- 디스플레이수평형 -->
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-5634079691781840"
+          data-ad-slot="8707076011"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+
       <footer class="page__meta">
         {% if site.data.ui-text[site.locale].meta_label %}
           <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
@@ -89,18 +100,4 @@ layout: default
       </div>
     </div>
   {% endif %}
-
-  <!-- 구글 애드센스 광고 -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5634079691781840"
-      crossorigin="anonymous"></script>
-  <!-- 디스플레이수평형 -->
-  <ins class="adsbygoogle"
-      style="display:block"
-      data-ad-client="ca-pub-5634079691781840"
-      data-ad-slot="8707076011"
-      data-ad-format="auto"
-      data-full-width-responsive="true"></ins>
-  <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
 </div>
