@@ -22,8 +22,8 @@
         <span class="nav__sub-title">CS 지식</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "HTTP" %}
-                        <li><a href="/categories/http" class="">HTTP({{category[1].size}})</a></li>
+                    {% if category[0] == "HttpProtocol" %}
+                        <li><a href="/categories/httpProtocol" class="">HTTP({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
