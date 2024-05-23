@@ -15,5 +15,13 @@
       {% include nav_list nav=page.sidebar.nav %}
     {% endif %}
   {% endif %}
+
+<!--20240523 사이드바 카테고리 추가  -->
+{% if page.sidebar_main %}
+  {% include nav_list_main %}
+{% endif %}
+
   </div>
 {% endif %}
+
+
