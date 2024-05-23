@@ -14,7 +14,7 @@
         <span class="nav__sub-title">Coding Test</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Baekjoon" %}
+                    {% if category[0] == "백준" %}
                         <li><a href="/categories/백준" class="">백준({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
