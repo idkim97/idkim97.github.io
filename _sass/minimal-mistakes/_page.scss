@@ -4,9 +4,10 @@
 
 #main {
   @include clearfix;
-  margin-left: auto;
+  // margin-left: auto;
+  margin-left: 15em;
   margin-right: auto;
-  padding-left: 1em;
+  // padding-left: 1em;
   padding-right: 1em;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
