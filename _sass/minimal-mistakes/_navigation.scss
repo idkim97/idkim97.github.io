@@ -33,7 +33,8 @@
     }
 
     @include breakpoint($x-large) {
-      width: calc(100% - #{$right-sidebar-width});
+      // width: calc(100% - #{$right-sidebar-width});
+      width: calc(100% - 100px);
     }
   }
 
