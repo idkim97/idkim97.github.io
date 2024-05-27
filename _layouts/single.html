@@ -70,6 +70,17 @@ layout: default
     {% endif %}
   </article>
 
+  <!-- 구글 애드센스 광고 -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5634079691781840" crossorigin="anonymous"></script>
+  <!-- 디스플레이수평형 -->
+  <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-5634079691781840"
+      data-ad-slot="8707076011"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+
   {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
   {% if page.id and page.related and site.related_posts.size > 0 %}
     <div class="page__related">
@@ -82,20 +93,7 @@ layout: default
     </div>
   {% comment %}<!-- otherwise show recent posts if no related when `related: true` -->{% endcomment %}
 
-  <div class="adsense-belowComment">
-      <!-- 구글 애드센스 광고 -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5634079691781840" crossorigin="anonymous"></script>
-  <!-- 디스플레이수평형 -->
-  <ins class="adsbygoogle"
-      style="display:block"
-      data-ad-client="ca-pub-5634079691781840"
-      data-ad-slot="8707076011"
-      data-ad-format="auto"
-      data-full-width-responsive="true"></ins>
-  <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
 
-
-  </div>
 
   {% elsif page.id and page.related %}
     <div class="page__related">
