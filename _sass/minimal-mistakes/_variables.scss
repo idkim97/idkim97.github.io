@@ -192,11 +192,11 @@ $intro-transition: intro 0.3s both !default;
 
 
 .adsense-left {
-   position: fixed;
-  left: 0;
+  position: fixed;
+  left: 50px;
   top: 50%;
   transform: translateY(-50%);
-  width: 120px; /* 광고 배너의 너비 */
+  width: auto; /* 광고 배너의 너비 */
   height: auto;
   z-index: 1000; /* 다른 요소들 위에 배치되도록 설정 */
 }
