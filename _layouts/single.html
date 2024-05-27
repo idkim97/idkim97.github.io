@@ -58,16 +58,7 @@ layout: default
       </footer>
 
 
-      <!-- 구글 애드센스 광고 -->
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5634079691781840" crossorigin="anonymous"></script>
-      <!-- 디스플레이수평형 -->
-      <ins class="adsbygoogle"
-          style="display:block"
-          data-ad-client="ca-pub-5634079691781840"
-          data-ad-slot="8707076011"
-          data-ad-format="auto"
-          data-full-width-responsive="true"></ins>
-      <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+      
 
       {% if page.share %}{% include social-share.html %}{% endif %}
 
@@ -90,6 +81,19 @@ layout: default
       </div>
     </div>
   {% comment %}<!-- otherwise show recent posts if no related when `related: true` -->{% endcomment %}
+
+  <!-- 구글 애드센스 광고 -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5634079691781840" crossorigin="anonymous"></script>
+  <!-- 디스플레이수평형 -->
+  <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-5634079691781840"
+      data-ad-slot="8707076011"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+
+  
   {% elsif page.id and page.related %}
     <div class="page__related">
       <h4 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h4>
