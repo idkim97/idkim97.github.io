@@ -1,7 +1,7 @@
 ﻿---
 permalink: /2021-09-09-Instruction/
 published: true
-title: "[컴퓨터 구조] 1. Instruction 이란"
+title: "[컴퓨터 구조] Instruction(명령어) 이란?"
 date: 2021-09-09 12:00:00
 toc: true
 toc_sticky: true
