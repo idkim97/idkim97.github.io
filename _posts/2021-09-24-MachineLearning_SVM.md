@@ -1,19 +1,25 @@
 ﻿---
-title: "[머신러닝] [Python] 4. Support Vector Machine  (SVM)"
+published: true
+title: "[머신러닝] [Python] Support Vector Machine (SVM) 이란?"
 date: 2021-09-24 06:00:00
+toc: true
+toc_sticky: true
+toc_label: "SVM이란?"
 categories:
 - Machine Learning
 tags:
 - Machine Learning
 - Classification
 ---
-# 서포트 벡터 머신이란
-<hr>
-**서포트 벡터 머신(이하 SVM)**은  **결정 경계(Decision Boundary)**, 즉 분류를 위한 기준 선을 정의하는 모델이다. 그래서 분류되지 않은 새로운 점이 나타나면 경계의 어느 쪽에 속하는지 확인해서 분류 과제를 수행할 수 있게 된다.
 
-결국 이  **결정 경계**라는 걸 어떻게 정의하고 계산하는지 이해하는 게 중요하다는 뜻이다.
+<br><br><br>
 
-예시를 들어 보자.
+
+## ✅ SVM이란?
+
+**서포트 벡터 머신(이하 SVM)**은 **결정 경계(Decision Boundary)**, 즉 분류를 위한 기준 선을 정의하는 모델이다. 그래서 분류되지 않은 새로운 점이 나타나면 경계의 어느 쪽에 속하는지 확인해서 분류 과제를 수행할 수 있게 된다.
+
+결국 이  **결정 경계**라는 걸 어떻게 정의하고 계산하는지 이해하는 게 중요하다는 뜻이다. 예시를 보자.
 
 <p align="center">
 <img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/svm1.png?raw=true">
@@ -23,8 +29,7 @@ tags:
 
 <br><br><br><br><br><br>
 
-# Decision Boundary ( 최적의 결정경계 )
-<hr>
+## ✅ Decision Boundary ( 최적의 결정경계 )
 
 <p align="center">
 <img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/svm2.png?raw=true">
@@ -36,8 +41,7 @@ tags:
 <p align="center">
 <img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/svm3.png?raw=true">
 </p>
-이제 간단히 용어정리를 하고 넘어가겠다.
-두개의 cluster를 나누는 선을 **Separating line 혹은 Decision boundary 혹은 Classifier**
+이제 간단히 용어정리를 하고 넘어가겠다. 두개의 cluster를 나누는 선을 **Separating line 혹은 Decision boundary 혹은 Classifier**
 Separating line의 가장 경계부분에 있는 데이터를 **Support Vectors**
 Separating line부터 Support Vectors까지의 영역을 **Margin** 이라고 부른다.
 
@@ -61,17 +65,16 @@ Separating line부터 Support Vectors까지의 영역을 **Margin** 이라고 �
 
 이런 경우에는 두가지 방법을 사용해 분류 할 수 있다.
 
-1) **Soft Margin**    
-2) **Kernel Trick**
+**1) Soft Margin
+2) Kernel Trick**
 
 <br><br><br><br><br><br>
 
-# Soft Margin
-<hr>
+## ✅ Soft Margin
 소프트 마진은 두가지만 기억하면 된다.
 
-1. **마진을 크게**    
-2. **약간의 error를 허용하는것**  
+**1. 마진을 크게  
+2. 약간의 error를 허용하는것**  
 
 이를 위해선 **"C"**라고 불리는 penalty parameter를 사용한다.
 
@@ -87,19 +90,19 @@ classifier = SVC(C=0.01)
 
 <br><br><br>
 
-## "C" 의 Tradeoffs
+## ✅ "C" 의 Tradeoffs
 C를 사용해 마진의 너비를 조절하면 그 장단점이 분명하다.
 <p align="center">
 <img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/svm5.png?raw=true">
 </p>
 
-**C값을 줄이면 ( 소프트마진 ) 마진은 커지고 Error도 커진다.**  
-**C값을 늘리면 ( 하드마진 ) 마진은 작아지고 Error도 작아진다.**
+**C값을 줄이면 ( 소프트마진 ) 마진은 커지고 Error도 커진다.
+C값을 늘리면 ( 하드마진 ) 마진은 작아지고 Error도 작아진다.**
 
 
 <br><br><br><br><br><br>
 
-# Kernel
+## ✅ Kernel
 <hr>
 앞서 설명한 것들은 모두 Linear하게 분리가 가능한 데이터셋이였지만 만약 선형으로 분리 할 수 없는 데이터셋이 있다면 어떻게 해야할까?
 
@@ -107,7 +110,7 @@ C를 사용해 마진의 너비를 조절하면 그 장단점이 분명하다.
 <img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/svm6.png?raw=true">
 </p>
 
-위의 데이터는 어떤식으로는 선형으로 분류할 수 없는 데이터이다.
+위와같은 데이터는 어떤식으로는 선형으로 분류할 수 없는 데이터이다.
 이때 사용 할 수 있는 개념이 **Kernel**이다.
 
 **Kernel**이란 **데이터셋을 현재차원보다 고차원으로 변형시켜 선형으로 분류가 가능하게끔 만드는 것을 말한다**.
@@ -120,7 +123,7 @@ C를 사용해 마진의 너비를 조절하면 그 장단점이 분명하다.
 
 <br><br><br>
 
-Scikit-learn에서 Kernel로 사용할 수 있는 함수는 대표적으로 4가지가 있다.
+scikit-learn에서 Kernel로 사용할 수 있는 함수는 대표적으로 4가지가 있다.
 
  - **Linear kernel**   
  - **Polynomial kernel**   
@@ -131,7 +134,7 @@ Linear역시 커널의 한종류이며 RBF커널에 대해 좀더 자세히 알�
 
 <br><br><br><br><br><br>
 
-## RBF kernel
+## ✅ RBF kernel
 
 **RBF 커널** 혹은 **가우시안 커널**이라고 부른다.
 
@@ -147,7 +150,7 @@ classifier = SVC(kernel='rbf')
 
 <br><br><br><br><br><br>
 
-## Gamma
+## ✅ Gamma
 커널을 사용할 때 C말고도 사용할 수 있는 파라미터가 하나 더 있는데 그게 바로 **감마(gamma)**이다.  `'rbf'`,  `'poly'`,  `'sigmoid'` 커널을 사용할 때 `gamma`를 설정해줘야 한다.
 ```python
 classifier = SVC(kernel = "rbf", C = 2, gamma = 0.5)
@@ -173,37 +176,33 @@ gamma = 11.0인 경우 너무 높아 경계가 제대로 이루어지지 못한 
 
 <br><br><br><br><br><br>
 
-# Multi-Class SVM
-<hr>
-SVM은 Binary Classifier로 이진분류만 가능하지만 SVM을 이용해 다중 Class의 분류도 가능하다. 
-간단하게 예시를 들어 맛만보자.
+## ✅ Multi-Class SVM
+SVM은 Binary Classifier로 이진분류만 가능하지만 SVM을 이용해 다중 Class의 분류도 가능하다. 간단하게 예시를 들어 맛만보자.
 
 <p align="center">
 <img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/svm9.png?raw=true">
 </p>
 
-원리는 간단하다. 
-세개의 클래스중 한개를 제외한 나머지를 하나의 클래스로 분류한뒤 이진분류를 진행해주면 된다.
+원리는 간단하다. 세개의 클래스중 한개를 제외한 나머지를 하나의 클래스로 분류한뒤 이진분류를 진행해주면 된다.
 
 <br><br><br><br><br><br>
 
-# SVM의 장/단점
+## ✅ SVM의 장/단점
 
-## Advantages
+### 📌 Advantages
 
  - 마진이 명확하게 구분될때 잘 작동한다. 
  - 고차원 데이터 ( Feature가 많은 경우) 일때 효과적이다. 
  - Support Vector만 사용해 경계를 계산하므로 메모리를 효율적으로 쓴다.
 
-## Disadvantages
+### 📌 Disadvantages
 - 데이터셋이 많은 경우 Training time이 오래걸린다.
 - 데이터에 noise가 많은 경우 잘 작동하지 않는다
 - 정확도를 직접적으로 보여주진 않는다.
 
 <br><br><br><br><br><br>
 
-# SVM을 사용할 때 유의점
-<hr>
+## ✅ SVM을 사용할 때 유의점
 1. 어떤 커널을 사용할 지 결정해야만 한다. 
 	- `rgf`가 기본값으로 설정되어있다.
 2. 커널 파라미터를 결정해야 한다.
