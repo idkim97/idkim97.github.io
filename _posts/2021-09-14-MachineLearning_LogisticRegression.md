@@ -1,5 +1,4 @@
 ﻿---
-permalink: /2021-09-14-logistic_Regression/
 published: true
 title: "[머신러닝] [Python] 3. Logistic Regression (로지스틱 회귀)"
 date: 2021-09-14 02:00:00
