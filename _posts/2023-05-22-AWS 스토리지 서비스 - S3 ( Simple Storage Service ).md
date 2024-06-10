@@ -1,7 +1,7 @@
 ﻿---
 permalink: /aws-storage-service/
 title: "[AWS] AWS 스토리지 서비스 - S3 ( Simple Storage Service )"
-date: 2023-05-12 12:00:00
+date: 2023-05-19 15:00:00
 toc: true
 toc_sticky: true
 toc_label: "AWS 스토리지 서비스 - S3 ( Simple Storage Service )"
