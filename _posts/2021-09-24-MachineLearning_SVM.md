@@ -156,20 +156,20 @@ scikit-learn에서 지원하는 대표적인 kernel 함수는 크게 4가지가 
 
 1. **Linear Kernel**: 선형 커널은 원래 공간에서 선형 분리를 수행한다.
 	
-	K(x,y)=x⋅y
+	$K(x,y)=x⋅y$
 
  2. **Polynomial kernel** : 다항식 커널은 입력 벡터의 다항식 형태로 매핑한다.
 
-	$$K(x,y)=(x⋅y+c)^d$$  
+	$K(x,y)=(x⋅y+c)^d$ 
 
 
  3. **RBF kernel (=Gaussian kernel)** : 가우시안 커널이라고도 하며, 무한 차원 공간으로 매핑한다.  ($γ$는 커널의 폭을 조절하는 파라미터)
 
-	$$K(x,y)=exp(−γ∥x−y∥^2)$$ 
+	$K(x,y)=exp(−γ∥x−y∥^2)$
 
  4. **Sigmoid kernel** : 시그모이드 커널은 신경망에서 사용하는 활성화 함수와 유사한 형태이다.
 
-	$$K(x,y)=tanh(αx⋅y+c)$$
+	$K(x,y)=tanh(αx⋅y+c)$
 
 
 <BR><BR>
@@ -179,7 +179,7 @@ scikit-learn에서 지원하는 대표적인 kernel 함수는 크게 4가지가 
 
 kernel 함수 중 Default로 지정되어 가장 많이 사용되는 함수는 **RBF 커널**이다. RBF 커널 함수는 두 데이터 포인트 $x$와 $y$ 사이의 거리에 기초한다. 구체적으로, RBF 커널 함수는 다음과 같이 정의된다.
 
-$$ K(x,y)=exp(−γ∥x−y∥^2) $$
+$K(x,y)=exp(−γ∥x−y∥^2)$
 
 $∥x−y∥$는 두 벡터 $x$와 $y$사이의 유클리드 거리이고, $γ$는 커널의 폭을 조절하는 매개변수로 사용된다. 이때 $γ$는 반드시 양수값이다.
 
@@ -211,31 +211,83 @@ gamma = 11.0인 경우 너무 높아 경계가 제대로 이루어지지 못한 
 
 <BR><BR>
 
-### 📌 RBF kernel의 실제 구현
+### 📌 RBF kernel 구현 - python
 <hr>
 
-이를 scikit-learn으로 구현한 코드는 아래와 같다.
+이를 scikit-learn으로 구현한 코드는 아래와 같다. 먼저 scikit-learn 라이브러리를 설치해준다.
+
+```python
+pip install numpy matplotlib scikit-learn
+```
+
+SVM 모델 적용방법은 다음과 같다.
+
 ```python
 from sklearn.svm import SVC
 
 classifier = SVC(kernel='rbf')
 ```
-모델을 불러올 때 kernel의 기본값은 `'rbf'`로 설정되어 있고 이 외에도 `'linear'`, `'poly'`, `'sigmoid'` 같은 걸로 지정해줄 수도 있다.
 
+모델을 불러올 때 kernel의 Default는 `'rbf'`이고, 이 외에도 `'linear'`, `'poly'`, `'sigmoid'` 와 같은 다른 함수로 지정해줄 수도 있다.
 
-
- `'rbf'`,  `'poly'`,  `'sigmoid'` 커널을 사용할 때 `gamma`를 설정해줘야 한다.
-
+ `'rbf'`,  `'poly'`,  `'sigmoid'` 커널을 사용할 때는 `gamma`값을 설정해줘야 한다.
+ 
 ```python
 classifier = SVC(kernel = "rbf", C = 2, gamma = 0.5)
 ```
 
+이를 실제로 데이터와 연동하여 적용한 예제는 다음과 같다. scikit-learn의 datasets 모듈에서 테스트용 데이터셋인 Iris를 불러오고 전처리 후 SVM 모델을 적용해준다.
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn import svm, datasets
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report, accuracy_score
+
+# 데이터셋 생성
+# iris 데이터셋을 사용합니다.
+iris = datasets.load_iris()
+X = iris.data[:, :2]  # 꽃잎 길이와 폭만 사용
+y = iris.target
+
+# 데이터셋을 훈련 세트와 테스트 세트로 나눔
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+
+# SVM 모델 생성 및 학습 (RBF 커널 사용)
+model = svm.SVC(kernel='rbf', gamma='scale')
+model.fit(X_train, y_train)
+
+# 테스트 데이터로 예측 수행
+y_pred = model.predict(X_test)
+
+# 모델 성능 평가
+print("Accuracy:", accuracy_score(y_test, y_pred))
+print("Classification Report:\n", classification_report(y_test, y_pred))
+
+# 학습 데이터와 결정 경계 시각화
+def plot_decision_boundary(X, y, model):
+    h = .02  # 결정 경계의 해상도
+    x_min, x_max = X[:, 0].min() - 1, X[:, 0].max() + 1
+    y_min, y_max = X[:, 1].min() - 1, X[:, 1].max() + 1
+    xx, yy = np.meshgrid(np.arange(x_min, x_max, h),
+                         np.arange(y_min, y_max, h))
+    Z = model.predict(np.c_[xx.ravel(), yy.ravel()])
+    Z = Z.reshape(xx.shape)
+
+    plt.contourf(xx, yy, Z, alpha=0.8)
+    plt.scatter(X[:, 0], X[:, 1], c=y, edgecolors='k', marker='o')
+    plt.xlabel('Sepal length')
+    plt.ylabel('Sepal width')
+    plt.title('SVM with RBF Kernel')
+    plt.show()
+
+# 결정 경계 시각화
+plot_decision_boundary(X_train, y_train, model)
+
+```
 <br><br><br><br><br><br>
 
-
-
-
-<br><br><br><br><br><br>
 
 ## ✅ Multi-Class SVM
 SVM은 Binary Classifier로 이진분류만 가능하지만 SVM을 이용해 다중 Class의 분류도 가능하다. 간단하게 예시를 들어 맛만보자.
