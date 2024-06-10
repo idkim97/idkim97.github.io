@@ -126,6 +126,8 @@ AWS에서는 MFA를 사용하여 보안을 강화할 수 있다. 여러 유형�
 <br><br><br>
 
 4. 2번 Show QR code를 클릭하면 QR코드가 생성되는데 이를 Google OTP 앱으로 스캔하여 MFA 할당을 설정한다. Google OTP 앱에 표시되는 MFA 코드 2개 ( OTP하나 입력후, 기다리면 새로운 OTP 번호가 발급된다)를 각각 입력후 하단 MFA 할당을 클릭하면 설정이 완료된다.
+
+
 <p align="center">
 <img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/mfa3.png?raw=true">
 </p>
