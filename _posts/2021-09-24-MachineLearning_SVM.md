@@ -5,6 +5,7 @@ date: 2021-09-24 06:00:00
 toc: true
 toc_sticky: true
 toc_label: "SVM이란?"
+use_math: true
 categories:
 - Machine Learning
 tags:
@@ -155,7 +156,7 @@ scikit-learn에서 지원하는 대표적인 kernel 함수는 크게 4가지가 
 
 1. **Linear Kernel**: 선형 커널은 원래 공간에서 선형 분리를 수행한다.
 	
-	$$K(x,y)=x⋅y$$
+	K(x,y)=x⋅y
 
  2. **Polynomial kernel** : 다항식 커널은 입력 벡터의 다항식 형태로 매핑한다.
 
@@ -188,27 +189,30 @@ $∥x−y∥$는 두 벡터 $x$와 $y$사이의 유클리드 거리이고, $γ$�
 ### 📌 RBF kernel의 파라미터 : $γ$
 <hr>
 
-RBF kernel을 사용할 때  **감마(gamma)**이다.  `'rbf'`,  `'poly'`,  `'sigmoid'` 커널을 사용할 때 `gamma`를 설정해줘야 한다.
+RBF kernel을 사용할 때 매개변수로 사용되는 **$γ$(gamma)**는 데이터 포인트 사이의 유사성을 측정하는데 사용된다. 
 
-```python
-classifier = SVC(kernel = "rbf", C = 2, gamma = 0.5)
-```
+`gamma`는 쉽게 표현하면 결정 경계를 얼마나 유연하게 그을지 정해주는 매개변수이다. 학습 데이터에 얼마나 민감하게 반응할 것인지 모델을 조정하는 것이므로 SVM의 C파라미터와 비슷하다고 볼 수 있다.
 
-`gamma`는 결정 경계를 얼마나 유연하게 그을지 정해주는 것이다. 학습 데이터에 얼마나 민감하게 반응할 것인지 모델을 조정하는 것이므로 C와 비슷하다고 볼 수 있다.
+-   `gamma`값을  **높이면**  학습 데이터에 많이 의존하면서 데이터 포인트의 가까운 이웃을 위주로 같은 집단으로 분류하려고 한다. 한마디로 데이터에 매우 민감하게 반응한다. 결과적으로는 **결정 경계를 구불구불**  긋게 된다. 이는  모델의 **과적합(Overfitting)**을 초래할 수 있다.
 
--   `gamma`값을  **높이면**  학습 데이터에 많이 의존해서  **결정 경계를 구불구불**  긋게 된다. 이는  **오버피팅**을 초래할 수 있다.
-
--   반대로  `gamma`를  **낮추면**  학습 데이터에 별로 의존하지 않고  **결정 경계를 직선에 가깝게**  긋게 된다. 이러면  **언더피팅**이 발생할 수 있다.
+-   `gamma`를  **낮추면**  학습 데이터에 별로 의존하지 않고  더 넓은 영역의 데이터 포인트를 같은 집단으로 분류하려고 한다. 한마디로 데이터에 민감하게 반응하지 않는다. 결과적으로는 **결정 경계를 직선에 가깝게**  긋게 된다. 이는 모델의  **과소적합(Underfitting)**을 발생 시킬 수 있다.
 
 
 <p align="center">
 <img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/svm8.png?raw=true">
 </p>
 
-위의 그림을 보면 감마에 대한 이해가 쉽다.
-gamma = 3.0 인경우가 적당한 경우의 모습이라고 보면되고
-gamma = 0.008인 경우 너무 낮아 경계가 직선형을 띄는 모습
+위의 그림을 통해 감마 값에 대한 분류 추이를 살펴볼 수 있다.
+
+gamma = 3.0 인 경우가 가장 이상적으로 분류된 정도라고 보이고,  
+gamma = 0.008인 경우 너무 낮아 경계가 직선형을 띄는 모습,  
 gamma = 11.0인 경우 너무 높아 경계가 제대로 이루어지지 못한 모습이다.
+
+
+<BR><BR>
+
+### 📌 RBF kernel의 실제 구현
+<hr>
 
 이를 scikit-learn으로 구현한 코드는 아래와 같다.
 ```python
@@ -217,6 +221,14 @@ from sklearn.svm import SVC
 classifier = SVC(kernel='rbf')
 ```
 모델을 불러올 때 kernel의 기본값은 `'rbf'`로 설정되어 있고 이 외에도 `'linear'`, `'poly'`, `'sigmoid'` 같은 걸로 지정해줄 수도 있다.
+
+
+
+ `'rbf'`,  `'poly'`,  `'sigmoid'` 커널을 사용할 때 `gamma`를 설정해줘야 한다.
+
+```python
+classifier = SVC(kernel = "rbf", C = 2, gamma = 0.5)
+```
 
 <br><br><br><br><br><br>
 
