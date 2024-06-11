@@ -1,12 +1,12 @@
 ﻿---
 permalink: /2022-08-22-아파치(Apache)와 톰캣(Tomcat)/
 published: true
-title: "[Web & Server] 웹서버와 WAS (feat. 아파치 톰캣)"
+title: "[Web & Server] 아파치(Apache)와 톰캣(Tomcat) 그리고 웹서버와 WAS"
 date: 2022-08-22 18:00:00
 toc: true
 toc_sticky: true
-toc_label: "웹서버와 WAS (feat. 아파치 톰캣)"
-description: "아파치(Apache)와 톰캣(Tomcat)의 차이점과 웹 서버(Web Server)와 WAS(Web Application Server)에 대해 알아보세요. 아파치 톰캣의 역할과 기능을 상세히 설명합니다."
+toc_label: "아파치(Apache)와 톰캣(Tomcat) 그리고 웹서버와 WAS"
+description: "아파치(Apache)와 톰캣(Tomcat)의 차이점과 웹 서버(Web Server)와 WAS(Web Application Server)에 대해 알아보자."
 categories:
 - Web & Server
 tags:
