@@ -16,7 +16,9 @@ tags:
 - 개발상식
 - Server
 - Web
+meta_description: "아파치(Apache)와 톰캣(Tomcat)의 차이점과 웹 서버(Web Server)와 WAS(Web Application Server)에 대해 알아보세요. 아파치 톰캣의 역할과 기능을 상세히 설명합니다."
 ---
+
 <br><br><br>
 
 오늘은 **아파치와 톰캣**이 무엇인지, 그 차이점은 뭐가있는지, 그리고 아파치가 속해있는 **Web 서버**와 톰캣이 속해있는 **WAS(Web Application Server)** 에 대해 알아보자.
@@ -25,7 +27,7 @@ tags:
 
 ## ✅ 아파치 톰캣 (Apache Tomcat)
 <p align="left">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/apache1.png?raw=true">
+<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/apache1.png?raw=true" alt="아파치 톰캣">
 </p>
 스프링 뿐만 아니라 웹개발을 공부하는 사람이라면 **아파치 톰캣(Apache Tomcat)** 이라는 서버를 많이 들어봤을 것이다. 우리가 사용하는 많은 웹페이지는 아파치 톰캣을 서버로 사용하고, 세계에서 가장 많이 사용중인 WAS중 하나이다. 
 
@@ -37,7 +39,7 @@ tags:
 Web서버는 보통 **HTTP 서버**를 의미한다. HTTP 서버는 **URL(웹주소)** 및 **HTTP(프로토콜 주소)** 를 이해하는 소프트웨어 이다. HTTP 서버는 저장하는 웹 사이트의 **도메인 이름**을 통해 액세스 할 수 있으며 호스팅 된 웹 사이트의 콘텐츠를 사용자의 장치로 전달한다. 
 
 <p align="left">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/servlet2.png?raw=true">
+<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/servlet2.png?raw=true" alt="웹서버와 클라이언트 통신">
 </p>
 
 브라우저에 Web 서버에서 호스팅되는 파일이 필요할 때마다 브라우저는 **HTTP**를 통해 파일을 요청한다. 요청이 올바른 Web 서버에 도달하면 HTTP서버가 요청을 수락하고 요청된 문서를 찾은 다음 HTTP를 통해 브라우저로 다시 보낸다. ( 이때, 요청된 문서를 찾지 못하면 우리가 많이 접해본 **'404 Not Found'** 를 반환한다! )
@@ -58,7 +60,7 @@ Web서버는 보통 **HTTP 서버**를 의미한다. HTTP 서버는 **URL(웹주
 ## ✅ 아파치 (Apache)
 
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/apache2.png?raw=true">
+<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/apache2.png?raw=true" alt="아파치">
 </p>
 결국 **아파치 서버**는 클라이언트에서 요청한 **HTTP Request**를 처리하는 **웹서버** 이다. 아파치는 **정적 타입 (HTML, CSS, IMAGE)** 의 데이터만을 처리 한다!
 
@@ -71,7 +73,7 @@ WAS 서버는 **동적인 자료**를 처리하는 서버이다. 기존 WEB서�
 
 <BR>
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/servlet3.png?raw=true">
+<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/servlet3.png?raw=true" alt="was서버 통신과정">
 </p>
 
 WAS는 **웹서버 + 서블릿 컨테이너 ( 웹 컨테이너 )** 로 구성되어 있다.  클라이언트에서 HTTP Request를 보내면 먼저 웹서버를 통해 정적데이터 처리만 필요한 요청인지 확인한다. 이후 정적 데이터 처리만 필요하다면 그대로 웹서버에서 요청에 대한 응답을 다시 클라이언트로 보내준다.
@@ -89,7 +91,7 @@ WAS는 **웹서버 + 서블릿 컨테이너 ( 웹 컨테이너 )** 로 구성되
 ## ✅ 톰캣(Tomcat)
 
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/tomcat1.png?raw=true">
+<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/tomcat1.png?raw=true" alt="톰캣">
 </p>
 톰캣은 **동적인 웹을 만들기 위한 웹 컨테이너** ,  **JSP와 Servlet을 구동하기 위한 서블릿 컨테이너** 역할을 수행한다. 한마디로 정적페이지를 제외한 JSP, ASP, PHP 등은 톰캣에서 처리한다. 또한 **DB연결, 데이터 조작, 다른 응용 프로그램과 상호작용**이 가능하다.
 
@@ -99,7 +101,7 @@ WAS는 **웹서버 + 서블릿 컨테이너 ( 웹 컨테이너 )** 로 구성되
 
 ## ✅ 웹서버와 WAS의 구조
 <p align="left">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/apa1.png?raw=true">
+<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/apa1.png?raw=true" alt="웹서버와 was 구조">
 </p>
 <br>
 
