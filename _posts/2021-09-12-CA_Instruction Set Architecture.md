@@ -1,5 +1,4 @@
 ﻿---
-permalink: /2021-09-12-Instruction-Set-Architecture/
 published: true
 title: "[컴퓨터 구조] Instruction Set Architecture (ISA) 이란?"
 date: 2021-09-12 12:00:00
