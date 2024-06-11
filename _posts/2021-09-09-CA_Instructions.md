@@ -5,6 +5,7 @@ date: 2021-09-09 12:00:00
 toc: true
 toc_sticky: true
 toc_label: "Instruction 이란"
+description: "Instruction(명령어)이란 무엇이고 Instruction의 구성요소, 예시 그리고 이를 이해하기 위한 2의 보수와 폰 노이만 구조에 대해 알아보자."
 categories:
 - Computer Architecture
 tags:
@@ -68,7 +69,7 @@ tags:
 <hr>
 
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/2's.jpg?raw=true">
+<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/2's.jpg?raw=true" alt="2의보수 연습문제.">
 </p>
 
 1111 1111 1111 1111 1111 1111 1111 1000<sub>2</sub>의 값을 구하라는 문제이다. 물론 컴퓨터 시스템 내에서의 값을 말한다.
@@ -84,7 +85,7 @@ tags:
 ## ✅ The Von-Nuemann Model ( 폰 노이만 구조 )
 
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/Von.png?raw=true">
+<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/Von.png?raw=true" alt="폰 노이만 구조.">
 </p>
 
 <br>
