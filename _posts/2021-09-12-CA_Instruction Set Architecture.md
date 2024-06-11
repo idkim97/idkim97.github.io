@@ -5,6 +5,7 @@ date: 2021-09-12 12:00:00
 toc: true
 toc_sticky: true
 toc_label: "ISA란?"
+description: "Instruction Set(명령어 집합)이란 무엇이고 ISA의 구성요소 및 특징을 알아보자. RISC와 CISC의 특징과 차이점을 알아보자."
 categories:
 - Computer Architecture
 tags:
