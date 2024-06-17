@@ -1,6 +1,6 @@
 ﻿---
 published: true
-title: "[머신러닝] [Python] 3. Logistic Regression (로지스틱 회귀)"
+title: "[머신러닝] [Python] Logistic Regression (로지스틱 회귀)"
 date: 2021-09-14 02:00:00
 toc: true
 toc_sticky: true
@@ -32,7 +32,7 @@ Logistic Regression에 대한 설명에 앞서 기본적인 이해를 위해 선
 
 
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/linear.jpg?raw=true">
+<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/linear.jpg?raw=true" alt="단순선형회귀">
 </p>
 
 <br><br><br><br><br><br>
