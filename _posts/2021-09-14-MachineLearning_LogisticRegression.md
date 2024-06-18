@@ -5,6 +5,7 @@ date: 2021-09-14 02:00:00
 toc: true
 toc_sticky: true
 toc_label: "Logistic Regression"
+description: "Logistic Regression이란 무엇이고, 선형회귀란 무엇인지 알아보자. 그리고 로지스틱 회귀 파이썬 실습 코드를 함께 살펴보자."
 categories:
 - Machine Learning
 tags:
@@ -32,7 +33,7 @@ Logistic Regression에 대한 설명에 앞서 기본적인 이해를 위해 선
 
 
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/linear.jpg?raw=true" alt="단순선형회귀">
+<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/linear.jpg?raw=true" style="width:572px; height:159px" alt="단순 선형 회귀">
 </p>
 
 <br><br><br><br><br><br>
@@ -40,7 +41,7 @@ Logistic Regression에 대한 설명에 앞서 기본적인 이해를 위해 선
 생각해보니 집의 매매가격은 단순히 집의 평수가 크다고 결정되는 것이 아니라, 집의 층수, 방의 개수, 역세권인지 아닌지 등 여러가지 요소에 영향을 많이 받는것 같습니다. 이제 이러한 다수의 요소를 가지고 집의 매매 가격을 예측해 보고 싶습니다. y(집의 매매가격)는 여전히 1개이지만 x(층수, 방개수, 역세권 등)는 여러개가 되었습니다. 이를 **Multiple Linear Regression (다중 선형 회귀)**라고 부릅니다.
 
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/multi.png?raw=true">
+<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/multi.png?raw=true" style="width:448px; height:78px" alt="다중 선형 회귀">
 </p>
 
 <br><br><br><br><br><br>
@@ -57,24 +58,37 @@ Logistic Regression에 대한 설명에 앞서 기본적인 이해를 위해 선
 
 
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/data.png?raw=true">
+<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/data.png?raw=true" style="width:690px; height:400px" alt="심장병 유무무">
 </p>
-예시를 보며 자세히 살펴보자. **X로 Age**가 주어졌고 **Y로는 심장병 유무**가 주어진 데이터셋이다. 이를 **Linear Regression**으로 나타내면 아래 그림과 같다.
+
+<br>
+
+예시를 보며 자세히 살펴보자. **X로 Age**가 주어졌고 **Y로는 심장병 유무**가 주어진 데이터셋이다.
+
+이를 **Linear Regression**으로 나타내면 아래 그림과 같다.
+
+<br><br><br>
 
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/linear1.png?raw=true">
+<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/linear1.png?raw=true" style="width:690px; height:400px" alt="선형 회귀">
 </p>
 
 한눈에 보기에도 이상하다. Y가 Binary한 데이터로 주어졌기 때문에 Linear Regression으로 표현하면 정확도가 떨어지는 문제가 발생한다. 이를 해결하기 위해 데이터셋을 일부 수정한 뒤  **Logistic Regression**으로 나타내 보겠다.
 
+
+<br><br><br>
+
+
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/logic1.png?raw=true">
+<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/logic1.png?raw=true" style="width:690px; height:400px" alt="심장병 그룹">
 </p>
 
 X로 주어진 Age를 나이대별로 묶은 뒤 심장병에 걸린 사람수를 나타낸 데이터셋이다. 이를 **Logistic Regression**으로 나타내면 아래 그림과 같다.
 
+<br><br><br>
+
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/logic2.png?raw=true">
+<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/logic2.png?raw=true" style="width:476px; height:305px" alt="시그모이드 함수">
 </p>
 Y값은 0~1사이의 값으로 표현되며 y<0.5일때는 0으로 치환되고 y>=0.5일때는 1로 치환되는 결과를 보여준다. 위의 그래프처럼 나타내는 것을 **Sigmoid Function** (시그모이드 함수) 이라고 부른다.
 
@@ -112,7 +126,7 @@ Odds Ratio는 두개의 Odds의 비율을 나타내는 값이다. 예를들어 O
 사실상 Logit을 설명하기 위해 앞서 Odds와 Odds Ratio를 소개했다고 봐도 무방하다.  확률 p의 Logit은 다음과 같이 정의된다.
 
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/logit.jpg?raw=true">
+<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/logit.jpg?raw=true" style="width:643px; height:68px" alt="ln(odds)">
 </p>
 
 즉, Odds에 자연로그를 씌운 형태로 Logit이라는 말이 Log + Odds에서 나온말이다. 예를들어, p=0.5라고 하면 Odds = 0.5 / 0.5 = 1, Logit = ln(1) = 0 이된다.
@@ -155,7 +169,7 @@ print(passengers.head())
 총 891명의 데이터가 있고 총 15개의 컬럼이 있는걸 확인했다.
 
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/res.png?raw=true">
+<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/res.png?raw=true" style="width:602px; height:164px" alt="target 데이터">
 </p>
 
 우리의 Target 데이터는 survived 이다. 살았는지 죽었는지 확인하는 컬럼이고 1은 생존, 0는 사망을 의미한다.
@@ -318,3 +332,5 @@ print(model.predict_proba(sample_passengers))
  [0.51644668 0.48355332]]
  ```
 Jack과 나는 죽고 Rose만 산다..
+
+<br><br><br>
