@@ -7,6 +7,8 @@ main:
     url: /categories/
   - title: "Tags"
     url: /tags/
+  - title: "KE"
+    url: /KE/
 
   # - title: "Sample Posts"
   #   url: /year-archive/
