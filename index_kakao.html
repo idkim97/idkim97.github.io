@@ -108,9 +108,12 @@ sidebar: false <!-- 원래는 없던거 -->
 	</ul>
 </div>
 
-<img id="ig-surprise-img" src="{{ site.baseurl }}/assets/images/insta_profile.jpg" 
-			alt="insta surprise" 
-			style="display: none; max-width: 100%; margin-top: 10px;" />
+<div id="ig-modal" style="display: none;" class="modal-overlay">
+	<div class="modal-content">
+	  <img id="ig-surprise-img" src="{{ site.baseurl }}/assets/images/insta_profile.jpg"
+		   alt="insta surprise" />
+	</div>
+</div>
 
 
 <div class="container">
@@ -130,16 +133,47 @@ sidebar: false <!-- 원래는 없던거 -->
 <script>
 	document.addEventListener("DOMContentLoaded", function() {
 	  const igTitle = document.getElementById("ig-title");
-	  const surpriseImg = document.getElementById("ig-surprise-img");
-  
+	  const modal = document.getElementById("ig-modal");
+	
 	  igTitle.addEventListener("click", function() {
-		// 클릭할 때마다 이미지 보였다 숨겼다 토글
-		if (surpriseImg.style.display === "none") {
-		  surpriseImg.style.display = "block";
-		} else {
-		  surpriseImg.style.display = "none";
+		modal.style.display = "flex";  // 중앙 정렬을 위해 flex로 설정
+	  });
+	
+	  // 모달 배경 클릭 시 닫기
+	  modal.addEventListener("click", function(e) {
+		if (e.target === modal) {
+		  modal.style.display = "none";
 		}
 	  });
 	});
-  </script>
+	</script>
+	
+
+
+  <style>
+	.modal-overlay {
+	  position: fixed;
+	  z-index: 9999;
+	  top: 0; left: 0;
+	  width: 100vw;
+	  height: 100vh;
+	  background-color: rgba(0,0,0,0.8);
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	}
+	
+	.modal-content img {
+	  max-width: 80%;
+	  height: auto;
+	  border-radius: 12px;
+	  box-shadow: 0 0 20px rgba(255,255,255,0.3);
+	  animation: fadeIn 0.4s ease;
+	}
+	
+	@keyframes fadeIn {
+	  from { opacity: 0; transform: scale(0.95); }
+	  to { opacity: 1; transform: scale(1); }
+	}
+	</style>
   
