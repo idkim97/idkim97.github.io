@@ -136,33 +136,40 @@ sidebar: false <!-- 원래는 없던거 -->
 	  const modal = document.getElementById("ig-modal");
 	  const img = document.getElementById("ig-surprise-img");
 	
-	  let imgToggle = false; // 상태 저장용
+	  const img1 = "{{ site.baseurl }}/assets/images/insta_profile.jpg";
+	  const img2 = "{{ site.baseurl }}/assets/images/insta_profile2.jpg";
+	  let imgToggle = false; // false = img1, true = img2
 	
+	  // Instagram 클릭 시 모달 열고 이미지 초기화
 	  igTitle.addEventListener("click", function() {
 		modal.style.display = "flex";
-		img.src = "{{ site.baseurl }}/assets/images/insta_profile.jpg";
+		img.src = img1;
 		imgToggle = false;
 	  });
 	
-	  // 모달 배경 클릭 시 닫기
+	  // 배경 클릭 시 모달 닫기
 	  modal.addEventListener("click", function(e) {
 		if (e.target === modal) {
 		  modal.style.display = "none";
 		}
 	  });
 	
-	  // 이미지 오른쪽 클릭 시 다른 이미지로 변경
+	  // 이미지 클릭 시 위치 기준으로 이미지 토글
 	  img.addEventListener("click", function(e) {
 		const clickedX = e.offsetX;
 		const halfWidth = img.clientWidth / 2;
 	
 		if (clickedX > halfWidth && !imgToggle) {
-		  img.src = "{{ site.baseurl }}/assets/images/insta_profile2.jpg";
+		  img.src = img2;
 		  imgToggle = true;
+		} else if (clickedX <= halfWidth && imgToggle) {
+		  img.src = img1;
+		  imgToggle = false;
 		}
 	  });
 	});
 	</script>
+	
 	
 	
 
