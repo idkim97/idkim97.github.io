@@ -134,9 +134,14 @@ sidebar: false <!-- 원래는 없던거 -->
 	document.addEventListener("DOMContentLoaded", function() {
 	  const igTitle = document.getElementById("ig-title");
 	  const modal = document.getElementById("ig-modal");
+	  const img = document.getElementById("ig-surprise-img");
+	
+	  let imgToggle = false; // 상태 저장용
 	
 	  igTitle.addEventListener("click", function() {
-		modal.style.display = "flex";  // 중앙 정렬을 위해 flex로 설정
+		modal.style.display = "flex";
+		img.src = "{{ site.baseurl }}/assets/images/insta_profile.jpg";
+		imgToggle = false;
 	  });
 	
 	  // 모달 배경 클릭 시 닫기
@@ -145,8 +150,20 @@ sidebar: false <!-- 원래는 없던거 -->
 		  modal.style.display = "none";
 		}
 	  });
+	
+	  // 이미지 오른쪽 클릭 시 다른 이미지로 변경
+	  img.addEventListener("click", function(e) {
+		const clickedX = e.offsetX;
+		const halfWidth = img.clientWidth / 2;
+	
+		if (clickedX > halfWidth && !imgToggle) {
+		  img.src = "{{ site.baseurl }}/assets/images/insta_profile2.jpg";
+		  imgToggle = true;
+		}
+	  });
 	});
 	</script>
+	
 	
 
 
