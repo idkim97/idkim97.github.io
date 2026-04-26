@@ -1,4 +1,4 @@
-﻿---
+---
 permalink: /2024-04-22-ELK(Elasticsearch+LogStash+Kibana) 스택이란/
 published: true
 title: "[ELK] ELK(Elasticsearch+LogStash+Kibana) 스택이란? "
@@ -22,7 +22,7 @@ description: "ELK - ELK(Elasticsearch+LogStash+Kibana) 스택이란?"
 ## ✅ ELK 스택이란 ?
 
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/elk1.jpg?raw=true">
+<img src="/img/elk1.jpg">
 </p>
 
 
@@ -34,7 +34,7 @@ ELK 스택은 **Elasticsearch, LogStash, Kibana**의 로그 수집 및 시각화
 <br><br><br>
 
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/elk2.jpg?raw=true">
+<img src="/img/elk2.jpg">
 </p>
 
 ELK 스택은 독립된 모듈로 사용할 수도 있고, 다른 오픈소스 프로젝트와 연동해도 무방하다. **Beats**라는 경량화된 데이터 수집 모듈과 함께 사용할 수도 있다. 또한 데이터를 안정적으로 버퍼링하고 전달하는 **Redis, Kafka, RabbitMQ** 등과 같이 사용할 수도 있다.
@@ -90,7 +90,7 @@ ELK스택은 Elasticsearch + Logstash + Kibana를 함께 사용하는 기술로 
 그렇다면 Elasticsearch를 대체할 수 있는 검색엔진을 살펴보면 된다. 현재 Elasticsearch와 견줄만한 검색엔진은 **Solr**과 **Splunk**가 있다.
 
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/elk3.jpg?raw=true">
+<img src="/img/elk3.jpg">
 </p>
 
 Splunk는 유료로 제공되는 검색엔진이므로 제외하고 Solr와 Elasticsearch에 대한 비교를 해보도록 하겠다. 

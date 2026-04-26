@@ -1,4 +1,4 @@
-﻿---
+---
 permalink: /2023-02-18-HTTP의 특징/
 title: "[HTTP] HTTP의 특징 ( Stateless, Connectionless ) "
 date: 2023-02-18 13:00:00
@@ -34,7 +34,7 @@ Request Response 구조로 클라이언트는 서버에 요청을 보내고, 응
 무상태 프로토콜이란 서버가 클라이언트의 상태를 보존하지 않는 특징이다.
 서버의 확장성에 용이하다는 장점이 있지만, 클라이언트가 추가 데이터를 전송해야 하는 단점이 있다.
 <p align="left">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/stateless1.png?raw=true">
+<img src="/img/stateless1.png">
 </p>
 
 <br><br>
@@ -42,7 +42,7 @@ Request Response 구조로 클라이언트는 서버에 요청을 보내고, 응
 > **상태 유지(Stateful)란?**   
 > 클라이언트의 요청1에 대한 상태를 해당 요청을 받은 서버A가 기억하고 있는 것으로 항상 같은 서버A가 유지되어야 할 것이다. 만약 서버A에서 장애가 난다면 유지되던 상태 정보가 없어져 버리므로 처음부터 다시 요청을 해야한다.
 <p align="left">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/stateful1.png?raw=true">
+<img src="/img/stateful1.png">
 </p>
 
 <br><br>

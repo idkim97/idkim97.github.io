@@ -1,4 +1,4 @@
-﻿---
+---
 permalink: /trumpnews-2/
 title: "[Android] [TrumpNews] Jetpack Compose란?"
 date: 2025-02-05 15:00:00
@@ -29,7 +29,7 @@ tags:
 <br>
 
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/jetpack1.webp?raw=true">
+<img src="/img/jetpack1.webp">
 </p>
 
 <br>
@@ -39,7 +39,7 @@ tags:
 <br>
 
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/jetpack2.webp?raw=true">
+<img src="/img/jetpack2.webp">
 </p>
 
 <br>
@@ -49,7 +49,7 @@ tags:
 <br>
 
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/jetpack3.webp?raw=true">
+<img src="/img/jetpack3.webp">
 </p>
 
 <br>
@@ -57,7 +57,7 @@ tags:
 끝이다. 그냥 위 이미지 3장을 보자마자 Jetpack Compose를 사용하기로 결정했다. 코드가 너무 간결해져서 안드로이드 문외한인 내가 선택하지 않을 이유가 없었다.. 좀더 구체적인 차이점을 표로 정리해보았다.
 
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/jetpack4.png?raw=true">
+<img src="/img/jetpack4.png">
 </p>
 
 
@@ -199,7 +199,7 @@ fun MainScreen() {
 <br>
 
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/jetpack5.png?raw=true">
+<img src="/img/jetpack5.png">
 </p>
 
 <br><br><br><br>

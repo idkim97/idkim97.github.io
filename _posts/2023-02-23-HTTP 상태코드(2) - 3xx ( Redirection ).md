@@ -1,4 +1,4 @@
-﻿---
+---
 permalink: /2023-02-23-HTTP 상태코드(2) - 3xx ( Redirection )
 title: "[HTTP] HTTP 상태코드(2) - 3xx ( Redirection )"
 date: 2023-02-23 15:00:00
@@ -48,7 +48,7 @@ description: "HTTP - HTTP 상태코드(2) - 3xx ( Redirection )"
 요청에 대한 응답 결과에 Location 헤더가 있으면, **Location 위치로 자동 이동**
 
 <p align="left">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/redirect.png?raw=true">
+<img src="/img/redirect.png">
 </p>
 
 <br>
@@ -88,7 +88,7 @@ description: "HTTP - HTTP 상태코드(2) - 3xx ( Redirection )"
 <br>
 
 <p align="left">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/redirect2.png?raw=true">
+<img src="/img/redirect2.png">
 </p>
 
 <br>
@@ -107,7 +107,7 @@ description: "HTTP - HTTP 상태코드(2) - 3xx ( Redirection )"
 <br>
 
 <p align="left">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/redirect3.png?raw=true">
+<img src="/img/redirect3.png">
 </p>
 
 
@@ -138,7 +138,7 @@ description: "HTTP - HTTP 상태코드(2) - 3xx ( Redirection )"
 
 ### 📌 RPG 적용 전
 <p align="left">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/rpg1.png?raw=true">
+<img src="/img/rpg1.png">
 </p>
 
 1. POST요청으로 주문작업 실행
@@ -152,7 +152,7 @@ description: "HTTP - HTTP 상태코드(2) - 3xx ( Redirection )"
 <br><br>
 ### 📌 RPG 적용 후
 <p align="left">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/rpg2.png?raw=true">
+<img src="/img/rpg2.png">
 </p>
 
 1. POST 요청으로 주문작업 실행

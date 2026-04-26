@@ -1,4 +1,4 @@
-﻿---
+---
 published: true
 title: "[컴퓨터 구조] Instruction(명령어) 이란?"
 date: 2021-09-09 12:00:00
@@ -69,7 +69,7 @@ tags:
 <hr>
 
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/2's.jpg?raw=true" alt="2의보수 연습문제.">
+<img src="/img/2's.jpg" alt="2의보수 연습문제.">
 </p>
 
 1111 1111 1111 1111 1111 1111 1111 1000<sub>2</sub>의 값을 구하라는 문제이다. 물론 컴퓨터 시스템 내에서의 값을 말한다.
@@ -85,7 +85,7 @@ tags:
 ## ✅ The Von-Nuemann Model ( 폰 노이만 구조 )
 
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/Von.png?raw=true" alt="폰 노이만 구조.">
+<img src="/img/Von.png" alt="폰 노이만 구조.">
 </p>
 
 <br>

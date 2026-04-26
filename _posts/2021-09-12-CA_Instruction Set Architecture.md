@@ -1,4 +1,4 @@
-﻿---
+---
 published: true
 title: "[컴퓨터 구조] Instruction Set Architecture (ISA) 이란?"
 date: 2021-09-12 12:00:00
@@ -68,7 +68,7 @@ ISA를 개발하는 대표적인 회사는 Intel과 AMD, ARM이 있다. Intel과
 ## ✅ RISC와 CISC
 
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/RISC.jpg?raw=true">
+<img src="/img/RISC.jpg">
 </p>
 
 **RISC**(Reduced Instruction Set Computer)와 **CISC**(Complex Instruction Set Computer)는 두 가지 주요 프로세서 설계 철학을 나타내는 용어이다. 각 설계 철학은 명령어 집합(Instruction Set)과 프로세서 아키텍처에 대한 다른 접근 방식을 특징으로 한다.

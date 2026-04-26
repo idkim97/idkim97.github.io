@@ -1,4 +1,4 @@
-﻿---
+---
 permalink: /2023-06-16-7)예외처리 (try,catch, finally, throws)/
 published: true
 title: "[JAVA] 예외처리 ( try, catch, finally, throws ) "
@@ -26,7 +26,7 @@ description: "JAVA - 예외처리 ( try, catch, finally, throws )"
 ### 📌 발생시점에 따른 에러 분류
 
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/exception2.png?raw=true">
+<img src="/img/exception2.png">
 </p>
 
 프로그램 오류는 발생시점에 따라 **컴파일 에러**와 **런타임 에러**로 나눌수 있다. 추가적으로 **논리적 에러**도 존재한다.
@@ -59,7 +59,7 @@ void stringToInt(String str) {
 
 ## ✅ 예외 클래스의 계층 구조
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/exception1.png?raw=true">
+<img src="/img/exception1.png">
 </p>
 
 자바에서는 실행 시 발생할 수 있는 오류를 클래스로 정의했다. 모든 클래스의 조상은 Object 클래스이므로 Exception과 Error클래스 역시 Object클래스의 자손들이다.

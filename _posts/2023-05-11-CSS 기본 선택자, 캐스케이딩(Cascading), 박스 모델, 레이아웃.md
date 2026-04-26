@@ -1,4 +1,4 @@
-﻿---
+---
 permalink: /2023-05-11-CSS 기본 선택자, 캐스케이딩(Cascading), 박스 모델, 레이아웃/
 title: "[CSS] CSS 기본 선택자, 캐스케이딩(Cascading), 박스 모델, 레이아웃"
 date: 2023-05-11 15:00:00
@@ -132,7 +132,7 @@ ex ) `<img>, <string>, <span>` 등
 ## ✅ CSS와 박스 모델
 
 <p align="left">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/box-model.png?raw=true">
+<img src="/img/box-model.png">
 </p>
 
 웹페이지에 배치하는 모든 HTML 요소는 3개의 층을 가진 사각형 구조를 띄고 있습니다. 

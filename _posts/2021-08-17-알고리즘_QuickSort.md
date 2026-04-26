@@ -1,4 +1,4 @@
-﻿---
+---
 title: "[알고리즘] 퀵 정렬(Quick Sort) "
 date: 2021-08-18 01:00:00
 categories:
@@ -41,13 +41,13 @@ description: "알고리즘 - 퀵 정렬(Quick Sort)"
 	- **정복(Conquer)** : 부분 배열을 정렬한다. 이때 부분 배열의 크기가 0 또는 1이 될 때까지 **Recursive**하게 **Divide & Conquer**를 반복한다.
 	- **결합(Combine)** : 정렬된 모든 배열들을 하나의 배열에 합병한다.
 
-![enter image description here](https://github.com/idkim97/idkim97.github.io/blob/master/img/quicksort1.png?raw=true)
+![enter image description here](/img/quicksort1.png)
 
 
 <br> <br> <br><br> <br> <br>
 
 ## Quick Sort 알고리즘 예제
-![enter image description here](https://github.com/idkim97/idkim97.github.io/blob/master/img/quicksort2.png?raw=true)
+![enter image description here](/img/quicksort2.png)
 
 <br>
 

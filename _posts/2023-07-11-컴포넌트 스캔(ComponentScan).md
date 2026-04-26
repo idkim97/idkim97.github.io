@@ -1,4 +1,4 @@
-﻿---
+---
 permalink: /2023-07-11-컴포넌트 스캔(@ComponentScan)/
 published: true
 title: "[스프링] 컴포넌트 스캔(ComponentScan)"

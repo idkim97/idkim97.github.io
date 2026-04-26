@@ -1,4 +1,4 @@
-﻿---
+---
 permalink: /2023-02-24-HTTP 상태코드(3) - 4xx ( Client Error ), 5xx ( Server Error )
 title: "[HTTP] HTTP 상태코드(3) - 4xx ( Client Error ), 5xx ( Server Error )"
 date: 2023-02-24 15:00:00

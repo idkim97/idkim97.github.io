@@ -1,4 +1,4 @@
-﻿---
+---
 title: "[알고리즘] 합병 정렬(Merge Sort) "
 date: 2021-08-10 20:00:00
 categories:
@@ -46,7 +46,7 @@ description: "알고리즘 - 합병 정렬(Merge Sort)"
 
 ## Merge Sort 알고리즘 예제
 
-![enter image description here](https://github.com/idkim97/idkim97.github.io/blob/master/img/MergeSort.png?raw=true)
+![enter image description here](/img/MergeSort.png)
 
 **Ⅰ**. 배열에 21, 10, 12, 20, 25, 13, 15, 22가 들어있다고 보고 이를 **Merge Sort**해보자  
 **Ⅱ**. 먼저 배열을 두개로 쪼개어 나눈다 **(Divide)**  
@@ -57,7 +57,7 @@ description: "알고리즘 - 합병 정렬(Merge Sort)"
  <br> <br> <br><br> <br> <br>
 
 ## Merge Sort 알고리즘 과정
-![enter image description here](https://github.com/idkim97/idkim97.github.io/blob/master/img/MergeSort2.png?raw=true)
+![enter image description here](/img/MergeSort2.png)
 
 <br> <br> <br><br> <br> <br>
 

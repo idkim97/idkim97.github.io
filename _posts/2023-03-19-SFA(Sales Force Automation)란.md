@@ -1,4 +1,4 @@
-﻿---
+---
 permalink: /2024-03-19-SFA(Sales Force Automation)란/
 published: true
 title: "[ERP] SFA(Sales Force Automation)란?"

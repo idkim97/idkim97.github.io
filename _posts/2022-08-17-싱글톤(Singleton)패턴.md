@@ -1,4 +1,4 @@
-﻿---
+---
 permalink: /2022-08-17-싱글톤(Singleton)패턴/
 published: true
 title: "[Design Pattern] 싱글톤(Singleton)패턴 "

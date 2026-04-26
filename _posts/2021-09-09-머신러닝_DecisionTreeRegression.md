@@ -1,4 +1,4 @@
-﻿---
+---
 title: "[머신러닝] [Python] 2. Decision Trees Regression (결정 트리 회귀)"
 date: 2021-09-09 02:00:00
 categories:
@@ -35,7 +35,7 @@ description: "머신러닝 - 2. Decision Trees Regression (결정 트리 회귀)
 <br>
 
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/ex1.jpg?raw=true">
+<img src="/img/ex1.jpg">
 </p>
 
 Outlook, Temp, Humidity, Windy가 Predictors이고 Hours Played가 Target 데이터이다. Target 데이터가 Numerical 데이터라는걸 잘 염두해 둬야한다.
@@ -58,7 +58,7 @@ Outlook, Temp, Humidity, Windy가 Predictors이고 Hours Played가 Target 데이
 <hr>
 **Target 데이터의 SD값을 계산해준다.**
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/step2.jpg?raw=true">
+<img src="/img/step2.jpg">
 </p>
 주어진 데이터의 **SD = 9.32**이다.
 
@@ -77,7 +77,7 @@ Outlook, Temp, Humidity, Windy가 Predictors이고 Hours Played가 Target 데이
 **하나의 Predictor에 대한 SD값을 구한다. 이때 Predictor에 속한 모든 요소들의 SD를 각각 구한뒤 Count에 따라 가중치를 주고 Predictor의 SD를 구한다.**
 
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/step3.jpg?raw=true">
+<img src="/img/step3.jpg">
 </p>
 
 위의 그림처럼 하나의 Predictor (Outlook) 에서 Overcast, Rainy, Sunny 요소의 SD를 각각 구해준 뒤 가중치를 이용해 Outlook의 SD를 구해줘야 한다.
@@ -91,7 +91,7 @@ Outlook, Temp, Humidity, Windy가 Predictors이고 Hours Played가 Target 데이
 STEP3의 방식으로 다른 모든 Predictor들에 대한 SD를 구한뒤 Target과의 SDR을 구해서 SDR이 가장 큰값을 Root Node로 선정한다!
 
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/step4.jpg?raw=true">
+<img src="/img/step4.jpg">
 </p>
 
 Target인 Played Hours 의 SD가 9.32이고 Overcast 의 SD가 7.66이므로
@@ -106,7 +106,7 @@ Outlook의 SDR이 1.66으로 가장 크다.
 Outlook을 Root Node로 한 초기 Decision Tree는 다음과 같다.
 
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/step5.jpg?raw=true">
+<img src="/img/step5.jpg">
 </p>
 
 <br><br><br><br><br><br>
@@ -152,6 +152,6 @@ Rainy와 Sunny는 CV가 10보다 크고 Count도 3보다 크므로 Branching을 
 <hr>
 최종 **Decision Tree**를 구현한다!
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/step9.jpg?raw=true">
+<img src="/img/step9.jpg">
 </p>
 

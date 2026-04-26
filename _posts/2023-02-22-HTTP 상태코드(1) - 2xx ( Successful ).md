@@ -1,4 +1,4 @@
-﻿---
+---
 permalink: /2023-02-22-HTTP 상태코드(1) - 2xx ( Successful )/
 title: "[HTTP] HTTP 상태코드(1) - 2xx ( Successful )"
 date: 2023-02-22 15:00:00
@@ -58,7 +58,7 @@ description: "HTTP - HTTP 상태코드(1) - 2xx ( Successful )"
 
 
 <p align="middle">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/2xx1.png?raw=true">
+<img src="/img/2xx1.png">
 </p>
 
 <br><br><br><br><br><br>

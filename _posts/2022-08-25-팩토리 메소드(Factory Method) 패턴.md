@@ -1,4 +1,4 @@
-﻿---
+---
 permalink: /2022-08-25-팩토리 메소드(Factory Method)패턴/
 published: true
 title: "[Design Pattern] 팩토리 메소드(Factory Method) 패턴 "
@@ -33,7 +33,7 @@ description: "Design Pattern - 팩토리 메소드(Factory Method) 패턴"
 
 
 <p align="left">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/factory1.png?raw=true">
+<img src="/img/factory1.png">
 </p>
 
 <br><br>

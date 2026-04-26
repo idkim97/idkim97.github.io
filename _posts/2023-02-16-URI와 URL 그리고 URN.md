@@ -1,4 +1,4 @@
-﻿---
+---
 permalink: /2023-02-16-URI와 URL 그리고 URN/
 title: "[HTTP] URI와 URL 그리고 URN"
 date: 2023-02-16 13:00:00
@@ -23,7 +23,7 @@ description: "HTTP - URI와 URL 그리고 URN"
 **URI는 로케이터(Locator), 이름(Name) 또는 둘다로 분류될 수 있다.**
 
 <p align="left">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/uri1.png?raw=true">
+<img src="/img/uri1.png">
 </p>
 
 
@@ -39,7 +39,7 @@ description: "HTTP - URI와 URL 그리고 URN"
 
 ### 📌 **URL과 URN의 구조**
 <p align="left">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/uri2.png?raw=true">
+<img src="/img/uri2.png">
 </p>
 
 - **URL : 리소스가 있는 위치를 지정**

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "[알고리즘] 동적 계획법(Dynamic Programming) "
 date: 2022-01-01 01:00:00
 categories:
@@ -21,7 +21,7 @@ description: "알고리즘 - 동적 계획법(Dynamic Programming)"
 
 이를 피보나치 수열 함수를 예로 설명해보겠다.
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/Fibo.png?raw=true">
+<img src="/img/Fibo.png">
 </p>
 위의 그림은 피보나치 함수를 분할 정복방식으로 구현한 것이다. 함수 이름을 fib(n) 이라고 했을때, 예시처럼 fib(5)를 구하기 위해선 총 **15번**의 함수 호출이 필요하다. 이때, fib(2)는 총 3번 호출되는것을 볼 수 있는데 이는 **동일한 계산과정을 3번이나 반복하게 되어 알고리즘의 실행시간이 길어지게 된다**.
 
@@ -33,7 +33,7 @@ description: "알고리즘 - 동적 계획법(Dynamic Programming)"
 
 동적 계획법 알고리즘의 가장 유명한 예 중 하나를 더 설명해보겠다. 바로 **이항 계수의 계산**이다. 이항 계수는 서로다른 n개의 원소중에서 r개의 원소를 순서없이 골라내는 방법의 수를 계산하는 것으로 다음과 같은 점화식이 성립한다.
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/ncr.png?raw=true">
+<img src="/img/ncr.png">
 </p>
 
 <br><br><br><br><br><br>

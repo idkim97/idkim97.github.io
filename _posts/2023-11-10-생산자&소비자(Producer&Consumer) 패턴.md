@@ -1,4 +1,4 @@
-﻿---
+---
 permalink: /2023-11-10-생산자_소비자(Producer_Consumer) 패턴/
 published: true
 title: "[Design Pattern] 생산자&소비자(Producer&Consumer) 패턴 "
@@ -27,7 +27,7 @@ tags:
 <br>
 
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/producerconsumer.png?raw=true" style="width:700px; height:267px" alt="생산자 소비자 패턴 쓰레드 구조" >
+<img src="/img/producerconsumer.png" style="width:700px; height:267px" alt="생산자 소비자 패턴 쓰레드 구조" >
 </p>
 
 <br>

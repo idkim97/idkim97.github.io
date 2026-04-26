@@ -1,4 +1,4 @@
-﻿---
+---
 permalink: /2023-09-12-NamedParameterJdbcTemplate 이란/
 published: true
 title: "[스프링] NamedParameterJdbcTemplate 이란?"

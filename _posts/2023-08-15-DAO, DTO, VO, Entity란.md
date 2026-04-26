@@ -1,4 +1,4 @@
-﻿---
+---
 permalink: /2023-08-15-DAO, DTO, VO, Entity란/
 published: true
 title: "[스프링] DAO, DTO, VO, Entity란?"

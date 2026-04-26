@@ -1,4 +1,4 @@
-﻿---
+---
 permalink: /2023-01-06-Error Code 1452_Cannot add or update a child row_a foreign key constraint fails_해결/
 title: "[DB] [MYSQL] [Error Code 1452] 외래키 문제 해결"
 date: 2023-01-06 01:00:00
@@ -27,7 +27,7 @@ CONSTRAINT `vam_book_ibfk_1` FOREIGN KEY (`authorId`) REFERENCES `vam_author` (`
 📌 **vam_book, vam_bcate, vam_author** 라는 테이블이 있다.
 
 <p align="left">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/db1.png?raw=true">
+<img src="/img/db1.png">
 </p>
 
 📌 **vam_book**에는 기존에 넣어둔 튜플이 존재한다.
@@ -45,7 +45,7 @@ alter table vam_book add foreign key (cateCode) references vam_bcate(cateCode);
 ## ❗ 원인
 결론부터 보면 **참조 무결성**을 위배 했기때문에 발생한 에러이다.
 <p align="left">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/db2.png?raw=true">
+<img src="/img/db2.png">
 </p>
 
 **참조 무결성이란 관계 데이터베이스 관계 모델에서 2개의 관련 있던 관계 변수 간의 일관성을 말한다.** 

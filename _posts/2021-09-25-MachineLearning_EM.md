@@ -1,4 +1,4 @@
-﻿---
+---
 title: "[머신러닝] [Python] 5. Expectation-Maximization (EM)"
 date: 2021-09-25 06:00:00
 categories:
@@ -26,7 +26,7 @@ EM 알고리즘은 모수에 관한 추정값으로 로그가능도 ( Log Likeli
 
 여기서 우리는 각 차수마다 동전 A를 선택했는지, B를 선택했는지 알고 있다. 이는 우리가 상태를 아는 경우에 해당한다. 이때 우리는 **각 동전의 앞/뒷면이 나올 확률**을 구하고 싶다. 이를 구하기 위해서는 Maximum Likelihood (최대 가능도) 를 사용한다. 다음과 같이 동전 A를 선택하였을 때 앞면이 나온 총 횟수 24와 뒷면이 나온 총 횟수 6을 사용하여 앞면이 나올 최대 가능도는 24/24+6 = 0.8을 구할 수 있다. 마찬가지로 동전 B의 앞면이 나올 확률 0.45를 구할 수 있다. 각 차수마다 어떤 동전을 선택했는지 아는 상태이기에, 한 차수에는 한 동전에 대한 가능성만을 계산한다.
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/em1.png?raw=true">
+<img src="/img/em1.png">
 </p>
 
 <br><br><br><br><br><br>
@@ -37,7 +37,7 @@ EM 알고리즘은 모수에 관한 추정값으로 로그가능도 ( Log Likeli
 
 이를 해결할 수 있는 방법이 바로 **EM Algorithm**이다.
 <p align="center">
-<img src="https://github.com/idkim97/idkim97.github.io/blob/master/img/em2.png?raw=true">
+<img src="/img/em2.png">
 </p>
 
 <br><br><br><br><br><br>
