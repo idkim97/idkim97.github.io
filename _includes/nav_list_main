@@ -8,7 +8,7 @@
   <ul class="nav__items" id="category_tag_menu">
       <!--전체 글 수-->
       <li class="total_postNum">
-            📂 <span>전체 글 수</style> <span>{{sum}}</style> <span>개</style> 
+            📂 <span>전체 글 수</span> <span>{{sum}}</span> <span>개</span> 
       </li>
       <li>
         <span class="nav__sub-title">Java/Spring</span>
@@ -136,6 +136,13 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            <ul class="sub-title-ul">
+                {% for category in site.categories %}
+                    {% if category[0] == "Android" %}
+                        <li><a href="/categories/Android" class="">Android({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
 
         <span class="nav__sub-title">Etc</span>
             <ul class="sub-title-ul">
@@ -163,6 +170,13 @@
                 {% for category in site.categories %}
                     {% if category[0] == "RA" %}
                         <li><a href="/categories/RA" class="">RA({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul class="sub-title-ul">
+                {% for category in site.categories %}
+                    {% if category[0] == "보안" %}
+                        <li><a href="/categories/보안" class="">보안({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
