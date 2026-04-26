@@ -125,6 +125,11 @@ img {
 .greedy-nav .site-title img{
   width : 400px;
   height : 90px;
+
+  @media (max-width: 600px) {
+    width: 250px;
+    height: auto;
+  }
 }
 
 /* Prevent max-width from affecting Google Maps */

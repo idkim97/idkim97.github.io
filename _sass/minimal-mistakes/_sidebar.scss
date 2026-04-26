@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /* ==========================================================================
    SIDEBAR
    ========================================================================== */
@@ -130,11 +132,13 @@
 
   img {
     max-width: 200px; // 프로필 사진 크기 조정
-    width: 200px;
-    height: 200px;
+    width: 80px;
+    height: 80px;
     border-radius: 20%; // 50%면 프로필 사진 원형, 낮아질수록 사각형
 
     @include breakpoint($large) {
+      width: 200px;
+      height: 200px;
       padding: 5px;
       border: 1px solid $border-color;
     }
