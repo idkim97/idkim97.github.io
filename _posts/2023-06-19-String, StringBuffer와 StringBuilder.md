@@ -58,13 +58,11 @@ sb.append("world");
 
 StringBuffer는 다양한 API를 사용해 변경할 수 있다. 위의 코드는 앞서 String 클래스에서 설명한 '+' 연산자와 동일한 기능을 수행하는 코드이다. StringBuffer 인스턴스를 생성하고 초기값을 "hello"라고 부여한 뒤 StringBuffer 인스턴스에 "world"를 추가한 것이다.
 
-<br>
 
 <p align="center">
 <img src="/img/stringbuffer1.png">
 </p>
 
-<Br>
 그림을 보면 StringBuffer는 String과 달리 메모리를 새로 할당하지 않고 기존 메모리에 접근하여 값을 변경하는것을 볼 수 있다. 때문에 String 보다 메모리 낭비가 발생하지 않아 문자열의 추가, 수정, 삭제가 빈번하게 발생되는 경우 많이 사용한다.
 
 또 하나 기억해야할 점은 **`append()`는 반환타입이 StringBuffer이고 자기 자신의 주소를 반환한다**는 점이다. 때문에 다음과 같은 코드작성도 가능하다.
@@ -87,13 +85,11 @@ System.out.println(sb)	// 안녕하세요 반갑습니다 잘부탁드려요!
 ## ✅ StringBuffer 메서드
 
 전부다 알면 좋겠지만 주로 많이 쓰는걸 위주로 기억해두도록 하자. 빨간 박스 친 메서드는 코딩테스트에서도 용이하게 쓰일수 있는 메서드 이기때문에 코딩테스트를 준비하는 상황이라면 기억해두도록 하자!
-<br>
 
 <p align="center">
 <img src="/img/stringbuffer2.png">
 </p>
 
-<br>
 
 <p align="center">
 <img src="/img/stringbuffer3.png">

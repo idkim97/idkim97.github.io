@@ -112,7 +112,6 @@ public class personDTO {
 - JPA를 활용한다면 @Entity 어노테이션과 함께 사용하고, 기본 생성자를 필수로 생성해야 한다.
 - 보통 Builder패턴을 활용해서 생성자를 만드는게 일반적이다.
 
-<br>
 
 - 일반적인 Entity 예제
 
@@ -130,7 +129,6 @@ public class Person {
 }
 ```
 
-<br>
 
 - JPA 활용 Entity 예제
 

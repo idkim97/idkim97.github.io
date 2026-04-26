@@ -40,7 +40,6 @@ void compileError() {
 }
 ```
 
-<br>
 
 **런타임 에러는 프로그램의 실행 시점에서 발생하는 에러로 컴파일 이후 프로그램이 실행되고 실행도중 의도치 않은 동작에 대처하지 못해 에러가 발생한다.**
 ```java
@@ -51,7 +50,6 @@ void stringToInt(String str) {
     System.out.println("str : " + i);
 ```
 
-<br>
 논리적 에러는 컴파일도 잘되고 실행도 잘되지만 의도와는 다르게 동작하는 것을 말한다. 버튼을 뜨게 만들었는데 페이지가 뜬다거나, 아무 동작도 안하게 만들었는데 무언가 출력된다던가 하는 에러를 말한다.
 
 
@@ -209,7 +207,6 @@ class EX {
 	}
 }
 ```
-<br>
 
 
 위의 코드를 보면 `method2()` 에서 `throw new Exception();` 을 통해 Exception() 예외를 발생시켰다. `method2()`에서는 try-catch를 통한 예외처리를 하지 않았기 때문에 `method2()`를 호출한 `method1()`로 예외를 넘긴다(throws). `method1()` 에서도 마찬가지로 예외처리를 하지않았으므로 `method1()`을 호출한 `main` 으로 예외를 넘긴다. main에서도 마찬가지로 예외처리를 하지 않았으므로 위의 코드는 오류가 난다.
@@ -262,7 +259,6 @@ class EX {
 
 3. `throw new Exception("고의로 예외발생")` 같은 형태로도 사용가능 
 
-<br>
 
 ```java
 class EX {

@@ -71,7 +71,6 @@ public class AppConfig {
 	}  
 }
 ```
-<br>
 기존 스프링 빈을 등록하는 방식의 코드이다.
 
 1. 설정정보를 담고있는 클래스에 `@Configuration` 태그 사용
@@ -109,14 +108,12 @@ public class AutoAppConfig {
 @Component 
 public class MemoryMemberRepository implements MemberRepository {}
 ```
-<br>
 
 ####  📌 RateDiscountPolicy 에  `@Component` 추가
 ```java
 @Component 
 public class RateDiscountPolicy implements DiscountPolicy {}
 ```
-<br>
 
 ####  📌 MemberServiceImpl 에  `@Component` 추가 + `@Autowired` DI
 ```java
@@ -130,7 +127,6 @@ public class MemberServiceImpl implements MemberService {
 	}
 }
 ```
-<br>
 
 ####  📌 OrderServiceImpl 에  `@Component` 추가 + `@Autowired` DI
 ```java
@@ -148,7 +144,6 @@ public class OrderServiceImpl implements OrderService {
 }
 ```
 
-<br>
 
 빈으로 등록하려는 클래스에 `@Component` 를 붙여줌으로써 컴포넌트 스캔을 사용한 스프링 빈 등록이 가능해진다. 또한 `@Autowired` 태그를 붙이면 자동으로 의존관계를 주입해주는 기능을 한다. 이를 통해 더이상 `@Bean`을 사용한 스프링 빈 등록과 의존성 주입을 할 필요 없이 편하게 스프링 빈을 등록할 수 있게 되었다. 이 과정을 정리하면 다음과 같다.
 
@@ -208,7 +203,6 @@ com.example.myapp
 
 controllers 패키지와 services 패키지를 컴포넌트 스캔의 시작 위치로 지정하고자 하면 다음과 같이 코드를 작성할 수 있다.
 
-<br>
 
 ```java
 import org.springframework.context.annotation.ComponentScan;
@@ -229,7 +223,6 @@ public class AppConfig {
 **요즘은 컴포넌트 스캔의 시작위치를 따로 지정해주지 않는 방식을 주로 택한다.** 시작위치를 지정해주지 않으면 디폴트값은 `@ComponentScan` 어노테이션이 달려있는 설정정보 클래스의 패키지를 기준으로 하위 모든 패키지로 지정된다.
 
 이를 잘 활용해 설정정보 클래스를 프로젝트의 시작 루트에 생성하고 `@ComponentScan` 을 붙임으로써 모든 패키지가 컴포넌트 스캔의 대상이 될 수 있도록 설정한다.
-<br>
 
 ```java
 com.example.myapp

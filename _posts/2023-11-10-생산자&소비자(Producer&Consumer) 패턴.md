@@ -24,13 +24,11 @@ tags:
 
 생산자-소비자 패턴은 멀티스레드 환경에서 **생산자(Producer) 스레드가 데이터를 생성하고, 소비자(Consumer) 스레드가 해당 데이터를 소비**하도록 구성되며, 효율적으로 자원을 관리할 수 있도록 한다.
 
-<br>
 
 <p align="center">
 <img src="/img/producerconsumer.png" style="width:700px; height:267px" alt="생산자 소비자 패턴 쓰레드 구조" >
 </p>
 
-<br>
 
 위 그림처럼 작업을 생성하는 **생산자 스레드**와 Queue로 설계된 **공유자원**, 그리고 작업을 수행하는 **소비자 스레드**로 구성되어 있는 것이 일반적인 생산자-소비자 패턴의 구조이다.
 
@@ -56,7 +54,6 @@ tags:
 
 	생산자와 소비자 간의 동기화를 이루기 위한 메커니즘이 존재한다. 생산자측은 공유자원이 가득 차있는지 확인하고 데이터를 추가하기 위해 대기해야 하며, 소비자측은 공유자원이 비어 있는지 확인하고 데이터를 가져오기 위해 대기하는 등의 동작을 수행한다. 일반적으로 **뮤텍스(Mutex), 세마포어(Semaphore), 조건 변수(Condition Variable)** 등이 있다.
 
-<br>
 
 <p class="notice--info">
 ⚠️ 뮤텍스 (mutex) : 상호 배제를 통해 한번에 한 스레드만 공유자원에 접근 가능하도록 함
@@ -101,7 +98,6 @@ tags:
 
 생산자는 작업을 생성하고 버퍼,큐에 추가하며, 소비자는 버퍼에서 작업을 가져와 처리한다. 이를 통해 작업을 비동기적으로 처리하여 시스템의 처리량을 향상시킬 수 있다.
 
-<br>
 
 ```java
 import java.util.concurrent.*;
@@ -174,7 +170,6 @@ public class ThreadPoolProducerConsumer {
 }
 ```
 
-<br>
 
 위의 예제에서는 BlockingQueue를 사용하여 공유 버퍼를 구현했다. 그리고 Producer 클래스와 Consumer 클래스는 각각 Runnable을 구현하여 생산자 스레드와 소비자 스레드를 정의한다.
 
@@ -190,7 +185,6 @@ public class ThreadPoolProducerConsumer {
 
 이벤트 발생 시 생산자는 해당 이벤트를 생성하고 큐에 추가하는 역할을 수행하며, 소비자는 큐에서 이벤트를 가져와 처리한다.
 
-<br>
 
 ```java
 import java.util.concurrent.BlockingQueue;
@@ -288,7 +282,6 @@ public class EventDrivenProducerConsumer {
 }
 ```
 
-<br>
 
 생산자가 생산한 데이터를 이벤트 객체로 담아서 큐에 넣고, 소비자는 이벤트를 큐에서 가져와서 처리한다. 
 

@@ -32,7 +32,6 @@ description: "ELK - ElasticSearch (엘라스틱서치)란?"
 
 <br><br><br>
 <br><br><br>
-<br>
 
 ## ✅ Elasticsearch의 특징
 ElasticSearch는 단독 검색엔진으로 쓰이기도 하지만, ELK 스택이라는 집합으로 **ElasticSearch + LogStash + Kibana** 와 함께 쓰이기도 한다. ELK는 접근성과 용이성이 좋기때문에 최근 많은 기업과 프로젝트에서 사용되고 있는데 이는 ElasticSearch의 다음과 같은 특징 덕분이다.
@@ -83,7 +82,6 @@ Elasticsearch의 데이터들은 인덱스(Index) 라는 논리적인 집합 단
 
 <br><br><br>
 <br><br><br>
-<br>
 
 ## ✅ Elasticsearch의 클러스터링
 
@@ -139,7 +137,6 @@ node-1과 node-2는 es-cluster-1이라는 클러스터에 묶여있기 때문에
 
 <br><br><br>
 <br><br><br>
-<br>
 
 
 
@@ -186,7 +183,6 @@ Elasticsearch는 별도의 설정을 하지 않으면 **7.0버전부터는 Defau
 
 <br><br><br>
 <br><br><br>
-<br>
 
 
 

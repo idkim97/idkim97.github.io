@@ -81,7 +81,6 @@ public class Actor {
 }
 ```
 
-<br>
 
 위와 같은 Actor 객체가 존재한다고 할때 `BeanPropertySqlParameterSource`를 이용하면 아래와 같이 편하게 처리가 가능하다.
 

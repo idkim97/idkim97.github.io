@@ -72,7 +72,6 @@ Web서버는 보통 **HTTP 서버**를 의미한다. HTTP 서버는 **URL(웹주
 ## ✅ WAS (Web Application Server) 서버
 WAS 서버는 **동적인 자료**를 처리하는 서버이다. 기존 WEB서버는 정적 데이터만 처리가 가능하기때문에, 요청이 들어올때마다 HTML페이지, 이미지 등을 계속 응답해줘야 하고 이는 리소스의 낭비를 일으킨다. 때문에 이러한 단점을 커버하기 위해 WAS라는 서버를 만들었다. 
 
-<BR>
 <p align="center">
 <img src="/img/servlet3.png" alt="was서버 통신과정">
 </p>
@@ -104,7 +103,6 @@ WAS는 **웹서버 + 서블릿 컨테이너 ( 웹 컨테이너 )** 로 구성되
 <p align="left">
 <img src="/img/apa1.png" alt="웹서버와 was 구조">
 </p>
-<br>
 
 - 사용자 (Client)가 HTTP Request를 던졌을 때 필요한 데이터가 **정적데이터** 라면 **Web 서버(Apache)** 에서는 바로 **HTTP Response**를 통해 **정적 HTML을 반환**하고 **동적 데이터**라면 이를 **Web Container(Servlet Container)** 로 보내 동적 데이터 처리를 한 뒤 Web 서버를 통해 사용자에게 반환한다.
 

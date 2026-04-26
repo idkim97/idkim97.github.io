@@ -26,33 +26,27 @@ tags:
 
 먼저 XML로 작성한 코드를 살펴보자. 
 
-<br>
 
 <p align="center">
 <img src="/img/jetpack1.webp">
 </p>
 
-<br>
 
 위의 코드는 UI 제작만을 위해 작성된 XML코드이고 안에 데이터를 매핑해주기 위해 또 아래와 같은 코드를 작성해야한다.
 
-<br>
 
 <p align="center">
 <img src="/img/jetpack2.webp">
 </p>
 
-<br>
 
 다음은 Compose 방식으로 구현한 코드이다.
 
-<br>
 
 <p align="center">
 <img src="/img/jetpack3.webp">
 </p>
 
-<br>
 
 끝이다. 그냥 위 이미지 3장을 보자마자 Jetpack Compose를 사용하기로 결정했다. 코드가 너무 간결해져서 안드로이드 문외한인 내가 선택하지 않을 이유가 없었다.. 좀더 구체적인 차이점을 표로 정리해보았다.
 
@@ -77,7 +71,6 @@ tags:
 
 정확한 이해를 위해 예시를 함께 보자.
 
-<br>
 
 🔹 **명령형 방식**
 ```xml
@@ -143,13 +136,11 @@ fun MyScreen() {
 
 기존 **XML + `findViewById()`** 방식과 달리 **UI를 코드로 직접 작성**가능!
 
-<br>
 
 ### 2️⃣ **XML 없이 UI 구성 가능**
 기존에는 UI를 **XML에서 작성한 후** Kotlin/Java에서 조작해야 했지만,  
 Compose에서는 UI를 **Kotlin 코드 내에서 바로 작성**할 수 있다. 때문에 UI와 로직을 한 곳에서 관리가 가능하고 가독성이 좋아지며 코드가 간결해진다.
 
-<br>
 
 ### 3️⃣ **상태 관리가 편리 (State Management)**
 
@@ -171,7 +162,6 @@ fun Counter() {
 - `remember`와 `mutableStateOf()`를 사용하면 상태 변화에 따라 자동으로 UI 업데이트
 - 기존 `setText()` 같은 명령형 방식보다 더 직관적
 
-<br>
 
 ### 4️⃣ **뷰 재활용 & 코드 간결화**
 
@@ -196,7 +186,6 @@ fun MainScreen() {
 - **가독성이 좋아짐** → XML처럼 레이아웃을 따로 관리할 필요 없음
 
 
-<br>
 
 <p align="center">
 <img src="/img/jetpack5.png">

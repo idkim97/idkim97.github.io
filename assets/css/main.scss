@@ -93,3 +93,18 @@
   .page__date {
     font-size : 13px;
   }
+
+  // <br> 태그 대체 - CSS로 여백 관리 (2025-06-12)
+  .page__content {
+    > h2, > h3, > h4 {
+      margin-top: 2.5em;
+    }
+
+    > h2:first-child, > h3:first-child {
+      margin-top: 1.5em;
+    }
+
+    > hr + h2, > hr + h3 {
+      margin-top: 1.5em;
+    }
+  }

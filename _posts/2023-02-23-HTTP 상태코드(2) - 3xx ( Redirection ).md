@@ -51,7 +51,6 @@ description: "HTTP - HTTP 상태코드(2) - 3xx ( Redirection )"
 <img src="/img/redirect.png">
 </p>
 
-<br>
 
 - **영구 리다이렉션** : 특정 리소스의 URI가 영구적으로 이동
 	- 예) /members -> /users
@@ -85,13 +84,11 @@ description: "HTTP - HTTP 상태코드(2) - 3xx ( Redirection )"
 - 리다이렉트 요청시 요청메서드가 **GET**으로 변하고, **본문이 제거될 수 있다.**
 - **301 Moved Permanently는 안전하지 않은 HTTP URL을 HTTPS로 변경하는데 자주 사용된다.**
 
-<br>
 
 <p align="left">
 <img src="/img/redirect2.png">
 </p>
 
-<br>
 
 위 그림을 보면 HTTP 요청시 POST요청과 본문이 존재한다. 그리고 요청에 대한 응답은 301 Moved Permanently로 /new-event로 리다이렉트 하는 응답을 반환했다.
 
@@ -104,7 +101,6 @@ description: "HTTP - HTTP 상태코드(2) - 3xx ( Redirection )"
 - 301 Moved Permanently와 기능적으로는 같다.
 - 리다이렉트시 요청 메서드와 본문이 그대로 유지된다.
 
-<br>
 
 <p align="left">
 <img src="/img/redirect3.png">
@@ -134,7 +130,6 @@ description: "HTTP - HTTP 상태코드(2) - 3xx ( Redirection )"
 
 **때문에 POST요청 후에 GET요청으로 변경해주는 Redirect 작업이 필요하다!**
 
-<br>
 
 ### 📌 RPG 적용 전
 <p align="left">

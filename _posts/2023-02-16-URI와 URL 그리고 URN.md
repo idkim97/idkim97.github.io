@@ -63,7 +63,6 @@ description: "HTTP - URI와 URL 그리고 URN"
 > 
 > **https://www.google.com:443/search?q=hello&hl=ko**
 
-<br>
 
 - **프로토콜 (https)**
 

@@ -23,7 +23,6 @@ description: "머신러닝 - 1. Decision Trees (결정 트리)"
 
 ## 트리를 어떻게 나눌까?
 트리구조를 만들기 위해서는 고려해야할 사항이 몇가지 있다.
-<br>
 
 **1. 데이터를 나누는 기준**
 		
@@ -45,7 +44,6 @@ description: "머신러닝 - 1. Decision Trees (결정 트리)"
 		 - Discretization (이산화)
 		 - Binary Decision
 
-<br>
 
 
 - **2.나눌 가짓수**

@@ -56,7 +56,6 @@ description: "Design Pattern - 팩토리 메소드(Factory Method) 패턴"
 ## ✅ 팩토리 메소드 예제
 <h5>⭐ 사용자 관리 프로그램이 있고 네이버 계정으로 가입할 수 있다.</h5>
 
-<br>
 
 ### 📌 Product ( User )
 
@@ -67,7 +66,6 @@ public  interface User {
 ```
 -``` User``` 인터페이스 정의
 
-<br>
 
 ```java
 public  class NaverUser implements User { 
@@ -101,7 +99,6 @@ public abstract class UserFactory {
 - 외부에서 User 객체를 생성 할 때는 ```newInstance()``` 메서드 호출
 - 어떤 객체를 생성할 지는 하위 클래스에서 결정
 
-<br>
 
 ```java
 public class NaverUserFactory extends UserFactory {

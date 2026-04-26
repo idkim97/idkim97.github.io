@@ -61,7 +61,6 @@ Logistic Regression에 대한 설명에 앞서 기본적인 이해를 위해 선
 <img src="/img/data.png" style="width:690px; height:400px" alt="심장병 유무무">
 </p>
 
-<br>
 
 예시를 보며 자세히 살펴보자. **X로 Age**가 주어졌고 **Y로는 심장병 유무**가 주어진 데이터셋이다.
 
@@ -164,7 +163,6 @@ print(passengers.shape)
 print(passengers.head())
 ```
 
-<br>
 
 총 891명의 데이터가 있고 총 15개의 컬럼이 있는걸 확인했다.
 

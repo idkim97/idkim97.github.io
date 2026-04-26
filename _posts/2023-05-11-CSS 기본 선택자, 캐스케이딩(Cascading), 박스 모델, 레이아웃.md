@@ -23,7 +23,6 @@ description: "CSS - CSS 기본 선택자, 캐스케이딩(Cascading), 박스 모
 
 {% include codepen.html hash="vYVzEJP" title="css" %}
 
-<Br>
 
 전체선택자는 HTML 페이지 내부의 모든 요소에 같은 CSS 속성을 적용합니다. 때문에 margin이나 padding값을 초기화하는 등 기본값을 정해둘 때 사용합니다. 
 

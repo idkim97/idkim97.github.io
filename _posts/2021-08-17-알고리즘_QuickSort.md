@@ -49,7 +49,6 @@ description: "알고리즘 - 퀵 정렬(Quick Sort)"
 ## Quick Sort 알고리즘 예제
 ![enter image description here](/img/quicksort2.png)
 
-<br>
 
 **Ⅰ**. 피벗값을 입력 배열의 첫번째 데이터로 하자. ( 다른 값이여도 상관없다)  
 **Ⅱ**.  2개의 인덱스 변수 (low, high)를 이용해 두개의 배열로 나눠준다.  

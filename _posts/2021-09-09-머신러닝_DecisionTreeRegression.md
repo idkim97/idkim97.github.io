@@ -32,7 +32,6 @@ description: "머신러닝 - 2. Decision Trees Regression (결정 트리 회귀)
 
 ## Building a Decision Tree for Regression ( STEP )
 데이터셋이 주어지고 해당 데이터셋을 SDR을 활용해 Decision Tree로 변환하는 과정을 보면서 설명해보겠다.
-<br>
 
 <p align="center">
 <img src="/img/ex1.jpg">
