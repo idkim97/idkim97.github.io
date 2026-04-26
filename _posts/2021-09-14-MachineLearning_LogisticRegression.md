@@ -1,11 +1,11 @@
 ---
 published: true
-title: "[머신러닝] [Python] Logistic Regression (로지스틱 회귀)"
+title: "[머신러닝] Logistic Regression(로지스틱 회귀) 개념부터 Python 실습까지 총정리"
 date: 2021-09-14 02:00:00
 toc: true
 toc_sticky: true
-toc_label: "Logistic Regression"
-description: "Logistic Regression이란 무엇이고, 선형회귀란 무엇인지 알아보자. 그리고 로지스틱 회귀 파이썬 실습 코드를 함께 살펴보자."
+toc_label: "Logistic Regression 총정리"
+description: "Logistic Regression(로지스틱 회귀)이란 무엇인지 개념부터 선형 회귀와의 차이, 시그모이드 함수, Odds/Logit 원리, Scikit-learn 파이썬 실습(타이타닉 생존 예측)까지 총정리합니다."
 categories:
 - Machine Learning
 tags:
@@ -13,11 +13,19 @@ tags:
 - Regression
 - Linear Regression
 - Logistic Regression
+- 로지스틱 회귀
+- 시그모이드
+- 이진 분류
+- Scikit-learn
+- Python
+last_modified_at: 2025-06-12
 ---
 
 <br><br><br>
 
 이번 포스팅에서는 Categorical 변수를 예측하는 모델인 Logistic Regression ( 로지스틱 회귀)에 대해 살펴보겠습니다. 포스팅에서 사용된 자료에 대해서는 가천대학교 소프트웨어학과 김원 교수님의 강의를 기반으로 작성되었음을 밝힙니다.
+
+> 한줄 요약: Logistic Regression은 **데이터가 특정 범주에 속할 확률을 0~1 사이로 예측**하는 분류 알고리즘이다. 스팸 메일 필터링, 질병 진단, 고객 이탈 예측 등 실무에서 광범위하게 사용된다.
 
 <br><br><br><br><br><br>
 
@@ -330,5 +338,17 @@ print(model.predict_proba(sample_passengers))
  [0.51644668 0.48355332]]
  ```
 Jack과 나는 죽고 Rose만 산다..
+
+
+## ✅ Logistic Regression vs 다른 분류 알고리즘 비교
+
+| 알고리즘 | 장점 | 단점 | 적합한 경우 |
+|----------|------|------|----------|
+| **Logistic Regression** | 해석이 쉽고 빠름 | 비선형 관계 학습 어려움 | 선형 분리 가능한 데이터 |
+| **Decision Tree** | 직관적, 비선형 가능 | 과적합 위험 | 비선형 데이터, 해석 필요 시 |
+| **SVM** | 고차원 데이터에 강함 | 대용량 데이터에 느림 | 클래스 간 경계가 명확한 경우 |
+| **Random Forest** | 과적합 방지, 안정적 | 해석 어려움 | 대부분의 분류 문제 |
+
+Logistic Regression은 모델이 단순하고 각 Feature의 계수를 통해 **어떤 변수가 결과에 얼마나 영향을 주는지 해석할 수 있다는 것**이 가장 큰 장점이다. 실무에서는 복잡한 모델을 적용하기 전에 **베이스라인 모델**로 먼저 Logistic Regression을 적용해보는 경우가 많다.
 
 <br><br><br>
