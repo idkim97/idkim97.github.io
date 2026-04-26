@@ -10,6 +10,7 @@ categories:
 tags:
 - 카카오 클라우드 스쿨
 - AWS
+description: "AWS - AWS 루트 계정 설정 (Access Key / MFA)"
 ---
 <br><br>
 

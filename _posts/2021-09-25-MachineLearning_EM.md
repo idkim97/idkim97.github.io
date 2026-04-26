@@ -7,6 +7,7 @@ tags:
 - Machine Learning
 - Classification
 - EM
+description: "머신러닝 - 5. Expectation-Maximization (EM)"
 ---
 
 # EM 알고리즘 이란

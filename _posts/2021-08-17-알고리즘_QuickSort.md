@@ -6,6 +6,7 @@ categories:
 tags:
 - 알고리즘
 - 정렬
+description: "알고리즘 - 퀵 정렬(Quick Sort)"
 ---
 
 ## Goal

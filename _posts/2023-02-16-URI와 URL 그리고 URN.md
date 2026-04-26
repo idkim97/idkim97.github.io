@@ -12,6 +12,7 @@ tags:
 - URI
 - URL
 - URN
+description: "HTTP - URI와 URL 그리고 URN"
 ---
 <br><br><br>
 

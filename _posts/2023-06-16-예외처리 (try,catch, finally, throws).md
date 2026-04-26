@@ -12,6 +12,7 @@ tags:
 - JAVA
 - 객체지향
 - 객체지향 한방에 정리하기
+description: "JAVA - 예외처리 ( try, catch, finally, throws )"
 ---
 
 <br><br>

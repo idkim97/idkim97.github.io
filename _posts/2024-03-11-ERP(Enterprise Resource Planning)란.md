@@ -10,6 +10,7 @@ categories:
 - ERP
 tags:
 - ERP
+description: "ERP - ERP(Enterprise Resource Planning)란?"
 ---
 
 <br><br>

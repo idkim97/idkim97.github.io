@@ -11,6 +11,7 @@ categories:
 tags:
 - ELK
 - ElasticSearch
+description: "ELK - ElasticSearch (엘라스틱서치)란?"
 ---
 
 <br><br><br>

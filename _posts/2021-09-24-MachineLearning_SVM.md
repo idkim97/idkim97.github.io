@@ -11,6 +11,7 @@ categories:
 tags:
 - Machine Learning
 - Classification
+description: "머신러닝 - Support Vector Machine (SVM) 이란?"
 ---
 
 <br><br><br>

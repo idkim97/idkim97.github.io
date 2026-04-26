@@ -11,6 +11,7 @@ categories:
 tags:
 - Spring
 - 카카오 클라우드 스쿨
+description: "스프링 - 컴포넌트 스캔(ComponentScan)"
 ---
 
 <br><br>

@@ -11,6 +11,7 @@ tags:
 - 카카오 클라우드 스쿨
 - CSS
 - HTML
+description: "CSS - CSS 기본 선택자, 캐스케이딩(Cascading), 박스 모델, 레이아웃"
 ---
 <br><br>
 

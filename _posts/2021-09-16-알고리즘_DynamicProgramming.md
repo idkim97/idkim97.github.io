@@ -6,6 +6,7 @@ categories:
 tags:
 - 알고리즘
 - 다이나믹 프로그래밍
+description: "알고리즘 - 동적 계획법(Dynamic Programming)"
 ---
 
 # 동적 계획법 ( Dynamic Programming )

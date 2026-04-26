@@ -6,6 +6,7 @@ categories:
 tags:
 - Machine Learning
 - 
+description: "머신러닝 - 1. Decision Trees (결정 트리)"
 ---
 
 ## Decision Tree란

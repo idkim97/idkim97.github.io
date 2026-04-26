@@ -10,6 +10,7 @@ categories:
 tags:
 - HTTP
 - HTTP 상태코드
+description: "HTTP - HTTP 상태코드(2) - 3xx ( Redirection )"
 ---
 <br><br>
 

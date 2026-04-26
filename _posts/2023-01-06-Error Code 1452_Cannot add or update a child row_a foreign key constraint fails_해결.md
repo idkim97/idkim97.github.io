@@ -10,6 +10,7 @@ categories:
 tags:
 - DB
 - MYSQL
+description: "DB - 외래키 문제 해결"
 ---
 <br><br><br>
 

@@ -12,6 +12,7 @@ tags:
 - JAVA
 - 객체지향
 - 객체지향 한방에 정리하기
+description: "JAVA - String, StringBuffer와 StringBuilder"
 ---
 
 <br><br>

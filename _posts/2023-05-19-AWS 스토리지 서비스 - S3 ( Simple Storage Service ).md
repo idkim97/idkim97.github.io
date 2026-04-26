@@ -11,6 +11,7 @@ tags:
 - 카카오 클라우드 스쿨
 - AWS
 - S3
+description: "AWS - AWS 스토리지 서비스 - S3 ( Simple Storage Service )"
 ---
 <br><br>
 

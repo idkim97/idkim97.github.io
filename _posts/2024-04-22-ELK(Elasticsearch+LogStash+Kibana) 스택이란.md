@@ -14,6 +14,7 @@ tags:
 - LogStash
 - Kibana
 - Solr
+description: "ELK - ELK(Elasticsearch+LogStash+Kibana) 스택이란?"
 ---
 
 <br><br><br>

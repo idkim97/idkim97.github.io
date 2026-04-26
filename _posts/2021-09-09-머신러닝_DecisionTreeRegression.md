@@ -7,6 +7,7 @@ tags:
 - Machine Learning
 - Decision Trees
 - 
+description: "머신러닝 - 2. Decision Trees Regression (결정 트리 회귀)"
 ---
 
 ## Decision Tree For Regression

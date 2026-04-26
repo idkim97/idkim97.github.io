@@ -9,6 +9,7 @@ categories:
 - HTTP
 tags:
 - HTTP
+description: "HTTP - HTTP의 특징 ( Stateless, Connectionless )"
 ---
 <br><br><br>
 

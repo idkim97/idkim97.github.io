@@ -11,6 +11,7 @@ categories:
 tags:
 - Spring
 - Java
+description: "스프링 - DAO, DTO, VO, Entity란?"
 ---
 
 <br><br>

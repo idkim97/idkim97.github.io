@@ -12,6 +12,7 @@ tags:
 - 디자인 패턴
 - Design Pattern
 - 생성 패턴
+description: "Design Pattern - 싱글톤(Singleton)패턴"
 ---
 <br><br><br>
 

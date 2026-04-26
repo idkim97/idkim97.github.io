@@ -6,6 +6,27 @@ layout: null
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+        <loc>{{ site.url }}</loc>
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    {% for page in site.pages %}
+    {% if page.url != "/404.html" and page.url != "/feed.xml" and page.url != "/sitemap.xml" and page.url != "/robots.txt" and page.url != "/assets/css/main.css" %}
+    {% unless page.url contains ".txt" or page.url contains ".js" or page.url contains ".json" %}
+    <url>
+        <loc>{{ site.url }}{{ page.url | remove: "index.html" }}</loc>
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    {% endunless %}
+    {% endif %}
+    {% endfor %}
+
     {% for post in site.posts %}
     <url>
         <loc>{{ site.url }}{{ post.url }}</loc>
@@ -14,19 +35,8 @@ layout: null
         {% else %}
         <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
         {% endif %}
-
-        {% if post.sitemap.changefreq == null %}
         <changefreq>weekly</changefreq>
-        {% else %}
-        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
-        {% endif %}
-
-        {% if post.sitemap.priority == null %}
         <priority>0.5</priority>
-        {% else %}
-        <priority>{{ post.sitemap.priority }}</priority>
-        {% endif %}
-
     </url>
     {% endfor %}
 </urlset>

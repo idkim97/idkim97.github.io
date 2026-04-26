@@ -10,6 +10,7 @@ categories:
 tags:
 - HTTP
 - HTTP 상태코드
+description: "HTTP - HTTP 상태코드(1) - 2xx ( Successful )"
 ---
 <br><br>
 

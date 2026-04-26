@@ -6,6 +6,7 @@ categories:
 tags:
 - 알고리즘
 - 정렬
+description: "알고리즘 - 합병 정렬(Merge Sort)"
 ---
 ## Goal
 

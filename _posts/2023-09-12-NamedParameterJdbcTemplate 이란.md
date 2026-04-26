@@ -10,6 +10,7 @@ categories:
 - Spring
 tags:
 - Spring
+description: "스프링 - NamedParameterJdbcTemplate 이란?"
 ---
 
 <br><br>
