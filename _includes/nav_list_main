@@ -122,6 +122,13 @@
         <span class="nav__sub-title">AI</span>
             <ul class="sub-title-ul">
                 {% for category in site.categories %}
+                    {% if category[0] == "AI Agent" %}
+                        <li><a href="/categories/AI Agent" class="">AI Agent({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul class="sub-title-ul">
+                {% for category in site.categories %}
                     {% if category[0] == "Machine Learning" %}
                         <li><a href="/categories/Machine Learning" class="">Machine Learning({{category[1].size}})</a></li>
                     {% endif %}
